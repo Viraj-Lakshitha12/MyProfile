@@ -1,0 +1,17 @@
+#nameLabel{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#navItems{
+    margin-left: 730px;
+}
+#navItems>li>a:hover{
+    color: yellow;
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+*{
+    background-color: black;
+    color: white;
+}

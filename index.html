@@ -3,46 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>MyWebsite</title>
+
     <link rel="icon" href="assets/images/my3.jpg">
-    <meta name="keyeord" content="Viraj,web Designer,My Portfolio">
+    <meta name="keyword" content="Viraj,web Designer,My Portfolio">
     <meta name="description" content="This is my web page">
     <meta name="viewport" content="width=device-width initial scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+
 </head>
 <body>
 
    <header>
+<!--        navigation bar-->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark i" >
+           <div class="container-fluid">
+               <a class="navbar-brand" id="nameLabel" href="#">Viraj</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarScroll">
+                   <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="navItems" style="--bs-scroll-height: 100px;">
 
-       <nav id="home">
-           <ul>
-               <li> <a href="#home">Home</a> </li>
-               <li> <a href="#about">About</a> </li>
-               <li> <a href="#service">Service</a> </li>
-               <li> <a href="#gallery">Gallery</a> </li>
-               <li> <a href="#skills"> Skills</a> </li>
-               <li> <a href="#projects">Projects</a> </li>
-               <li> <a href="#contact">Contact</a> </li>
-           </ul>
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#" id="NavHome">Home</a>
+                       </li>
+
+                       <li class="nav-item " >
+                           <a class="nav-link" id="NavAbout" href="#" >About</a>
+                       </li>
+
+                       <li class="nav-item ">
+                           <a class="nav-link " id="NavService" href="#">Service</a>
+                       </li>
+
+                       <li class="nav-item ">
+                           <a class="nav-link " id="NavGallery" href="#">Gallery</a>
+                       </li>
+
+                       <li class="nav-item ">
+                           <a class="nav-link " id="NavSkills" href="#">Skills</a>
+                       </li>
+
+                       <li class="nav-item ">
+                           <a class="nav-link " id="NavProjects" href="#">Projects</a>
+                       </li>
+
+                       <li class="nav-item ">
+                           <a class="nav-link " id="NavContact" href="#">Contact</a>
+                       </li>
+
+                   </ul>
+                   <form class="d-flex" role="search">
+                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                       <button class="btn btn-outline-success" type="submit">Search</button>
+                   </form>
+
+               </div>
+           </div>
        </nav>
 
    </header>
 
-    <main>
-        <section>
-            <div>
-            <img src="assets/images/my3.jpg" width="400" >
+<!--    mainSection-->
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col" id="mainImage">
+                <img src="assets/images/my3.jpg" width="400" >
             </div>
-            <div>
+            <div class="col">
                 <p><b> WELCOME TO MY WORLD</b></p>
                 <h1>HI I'AM Viraj Lakshitha</h1>
                 <h2>Creative Web And App Developer</h2>
                 <input type="button" value="Read More">
-                <img src="assets/images/download.jpeg" width="45" height="45">
-                <img src="assets/images/download (5).png" width="45" height="45">
-                <img src="assets/images/download (1).jpeg" width="38" height="36">
-                <img src="assets/images/download (8).png" width="39" height="36">
-
+                <img src="assets/images/download.jpeg" width="39" height="39">
+                <img src="assets/images/download (5).png" width="39" height="39">
+                <img src="assets/images/download (1).jpeg" width="39" height="39">
+                <img src="assets/images/download (8).png" width="39" height="39">
             </div>
         </section>
+
+
         <section id="about">
             <div>
             <h1><b> <u>About Me</u> </b></h1>
