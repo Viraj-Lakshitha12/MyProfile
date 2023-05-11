@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
 
+
 </head>
 <body>
 
@@ -67,16 +68,18 @@
    </header>
 
 <!--    mainSection-->
-    <main class="container-fluid">
-        <section class="row">
-            <div class="col" id="mainImage">
-                <img src="assets/images/my3.jpg" width="400" >
+    <main >
+<!--        home-->
+        <section class="row container-fluid homeNav" id="mainSection">
+            <div class="col" id="mainSectionImage">
+                <img src="assets/images/my3.jpg" id="mainImage" width="450" >
             </div>
-            <div class="col">
-                <p><b> WELCOME TO MY WORLD</b></p>
-                <h1>HI I'AM Viraj Lakshitha</h1>
-                <h2>Creative Web And App Developer</h2>
-                <input type="button" value="Read More">
+            <div class="col" id="mainSectionAbout">
+                <p id="welcomeTag"><b> WELCOME TO MY WORLD</b></p>
+                <h1 id="iAmTag">HI I'AM</h1><h2 id="nameTag">Viraj Lakshitha</h2>
+                <h2 id="createTag">Creative Web And App Developer</h2>
+                <input type="button" id="homeReadMoreBtn" value="Read More">
+
                 <img src="assets/images/download.jpeg" width="39" height="39">
                 <img src="assets/images/download (5).png" width="39" height="39">
                 <img src="assets/images/download (1).jpeg" width="39" height="39">
@@ -84,34 +87,41 @@
             </div>
         </section>
 
-
+<!--    about-->
         <section id="about">
             <div>
-            <h1><b> <u>About Me</u> </b></h1>
-            <h3>Hello i am Viraj</h3>
-            <pre>     i am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or anemployerlooking to hire.
+                <div id="aboutDiv">
+                <h1 id="aboutTagName">About Me</h1>
+                </div>
+            <h3 id="HelloTag">Hello i am Viraj</h3>
+            <p id="descriptionTag"> I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or anemployerlooking to hire.
 you can get in touch with me here.I am highly focused software Engineer and developer in a variety of development and engineering positions. I have advanced skills in Desktop Application development
-(java + MYSQL), Websites development, Wordpress,graphic designing and much more. Contact me to get your custom quote.</pre>
+(java + MYSQL), Websites development, Wordpress,graphic designing and much more. Contact me to get your custom quote.</p>
             </div>
 
-            <div>
+            <div class="myDetails">
                 <p><b>Name :</b>Viraj Lakshitha</p>
-                <p><b>From :</b>Sri Lanka </p>
+                <p id="fromDetails"><b>From :</b>Sri Lanka </p>
                 <p><b>Phone :</b>0769291462</p>
-                <p><b>Email :</b>Viraj.lakshitha.22222@gmail.com </p>
+                <p id="myEmail"><b>Email :</b>Viraj.lakshitha.22222@gmail.com </p>
                 <p><b>Age :</b> 21 </p>
-                <p><b>Degree :</b>BSc (Hons) Computer Science </p>
+                <p id="myDegree"><b>Degree :</b>BSc (Hons) Computer Science </p>
             </div>
-            <div>
-                <input type="button"value="Hire Me">
-                <input type="button"value="Contact">
+            <div class="btnAbout">
+                <input type="button" id="btnHireMe" value="Hire Me">
+                <input type="button" id="btnContact" value="Contact">
             </div>
-            <div>
-                <h5><b>1+</b> YEARS OF EXPERIENCE </h5>
-                <h5><b>5+</b> COMPLETED PROJECTS </h5>
+            <div class="projectAndExpBtn">
+                <div id="expTag">
+                    <h5><b>1+</b> YEARS OF EXPERIENCE </h5>
+                </div>
+                <div id="projectTag">
+                    <h5><b>5+</b> COMPLETED PROJECTS </h5>
+                </div>
             </div>
         </section>
 
+<!--        service-->
         <section id="service">
             <h1><b><u>Service</u></b></h1>
             <div>
@@ -122,6 +132,7 @@ you can get in touch with me here.I am highly focused software Engineer and deve
             </div>
         </section>
 
+<!--        gallery-->
         <section id="gallery">
             <h1><b><u>Gallery</u></b></h1>
             <div>
@@ -134,6 +145,7 @@ you can get in touch with me here.I am highly focused software Engineer and deve
             </div>
         </section>
 
+<!--        skills-->
         <section id="skills">
             <h1><b><u>My Expertise!!</u></b></h1>
             <div>
@@ -151,6 +163,7 @@ you can get in touch with me here.I am highly focused software Engineer and deve
             </div>
         </section>
 
+<!--        projects-->
         <section id="projects">
             <h1><b><u>Projects</u></b></h1>
             <div>
@@ -161,6 +174,7 @@ you can get in touch with me here.I am highly focused software Engineer and deve
             <p>See All My Projects <a href="https://github.com/viraj-Lakhitha">Click Here</a></p>
         </section>
 
+<!--        contact-->
         <section id="contact">
             <div>
                 <form>
@@ -198,5 +212,80 @@ you can get in touch with me here.I am highly focused software Engineer and deve
         </section>
 
     </main>
+
+   <script src="../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+   <script>
+
+        $("#mainSectionImage").css('display','block');
+        $("#mainSectionAbout").css('display','block');
+        $("#about").css('display','none');
+        $("#service").css('display','none');
+        $("#gallery").css('display','none');
+        $("#skills").css('display','none');
+        $("#projects").css('display','none');
+        $("#contact").css('display','none');
+
+        $("#NavHome").click(function () {
+             $("#mainSectionImage").css('display','block');
+             $("#mainSectionAbout").css('display','block');
+            $("#about").css('display','none');
+            $("#service").css('display','none');
+            $("#gallery").css('display','none');
+            $("#skills").css('display','none');
+            $("#projects").css('display','none');
+            $("#contact").css('display','none');
+        });
+
+        $("#NavAbout").click(function () {
+            $("#mainSectionImage").css('display','none');
+            $("#mainSectionAbout").css('display','none');
+            $("#about").css('display','block');
+            $("#service").css('display','none');
+            $("#gallery").css('display','none');
+            $("#skills").css('display','none');
+            $("#projects").css('display','none');
+            $("#contact").css('display','none');
+        });
+        $("#NavService").click(function () {
+            $("#mainSectionImage").css('display','none');
+            $("#mainSectionAbout").css('display','none');
+            $("#about").css('display','none');
+            $("#service").css('display','block');
+            $("#gallery").css('display','none');
+            $("#skills").css('display','none');
+            $("#projects").css('display','none');
+            $("#contact").css('display','none');
+        });
+        $("#NavGallery").click(function () {
+            $("#mainSectionImage").css('display','none');
+            $("#mainSectionAbout").css('display','none');
+            $("#about").css('display','none');
+            $("#service").css('display','none');
+            $("#gallery").css('display','block');
+            $("#skills").css('display','none');
+            $("#projects").css('display','none');
+            $("#contact").css('display','none');
+        });
+        $("#NavSkills").click(function () {
+            $("#mainSectionImage").css('display','none');
+            $("#mainSectionAbout").css('display','none');
+            $("#about").css('display','none');
+            $("#service").css('display','none');
+            $("#gallery").css('display','none');
+            $("#skills").css('display','block');
+            $("#projects").css('display','none');
+            $("#contact").css('display','none');
+        });
+        $("#NavProjects").click(function () {
+            $("#mainSectionImage").css('display','none');
+            $("#mainSectionAbout").css('display','none');
+            $("#about").css('display','none');
+            $("#service").css('display','none');
+            $("#gallery").css('display','none');
+            $("#skills").css('display','none');
+            $("#projects").css('display','block');
+            $("#contact").css('display','none');
+        });
+   </script>
 </body>
 </html>
