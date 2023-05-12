@@ -23,11 +23,11 @@
     border-color: #0b5ed7;
     padding: 3px;
     box-shadow: rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;    margin-top: 60px;
-    margin-left: 120px;
+    margin-left: 70px;
 }
 #mainSectionAbout{
     margin-top: 190px;
-    margin-right: 150px;
+    margin-right: 200px;
 }
 #welcomeTag{
     font-family: 'Delicious Handrawn', cursive;
@@ -37,16 +37,18 @@
 
 #iAmTag{
     font-family: 'Delicious Handrawn', cursive;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bolder;
+    padding: 15px;
 }
 
 #nameTag{
     font-family: 'Delicious Handrawn', cursive;
-    font-size: 50px;
-    margin-left: 300px;
-    margin-top: -75px;
+    font-size: 70px;
+    margin-left: 240px;
+    margin-top: -110px;
     padding: 10px;
+    color: #bfff00;
 }
 #createTag{
     padding: 5px;
