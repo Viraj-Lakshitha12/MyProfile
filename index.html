@@ -294,22 +294,47 @@ you can get in touch with me here.I am highly focused software Engineer and deve
             <div>
                 <h3 id="ToKnowDiv"><img src="assets/images/download (15).png" width="50">    To know more about me, catch me through...</h3>
             </div>
-                <h4>Viraj Lakshitha</h4>
-                <p>A passionate Software Engineer from Sri Lanka.my passion for software lies with dreaming up ideas and making them come true with elegant interfaces. i take great care in the experience, architecture, and code quality of the things I build.</p>
+
             </div>
-            <div>
-                <img src="assets/images/1865269.png" width="80" height="" alt="Map">
-                <img src="assets/images/images (2).jpeg" width="80" height="" alt="Gmail">
-                <img src="assets/images/istockphoto-1180028723-612x612.jpg" width="80" height="" alt="Phone">
+            <div id="contactImages">
+                <img src="assets/images/1865269.png" id="map" width="80" height="" alt="Map">
+                <a href="mailto:viraj.lakshitha.22222@gmail.com"> <img src="assets/images/images (2).jpeg" width="80" height="" alt="Gmail"></a>
+                <a href="tel:0769291462"><img src="assets/images/istockphoto-1180028723-612x612.jpg" id="phoneIcon" width="80" height="" alt="Phone"></a>
             </div>
-            <aside>
-                <img src="assets/images/download.jpeg" width="45" height="45">
-                <img src="assets/images/download (5).png" width="45" height="45">
-                <img src="assets/images/download (1).jpeg" width="38" height="36">
-                <img src="assets/images/download (8).png" width="39" height="36">
-                <img src="assets/images/download (8).png" width="39" height="36">
-            </aside>
-            <p>Copyright © 2023. All rights reserved</p>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div id="contactAbout">
+                            <h4 id="MyNameTag">Viraj Lakshitha</h4>
+                            <p>A passionate Software Engineer from Sri Lanka.my passion for software lies with dreaming up ideas and making them come true with elegant interfaces. i take great care in the experience, architecture, and code quality of the things I build.</p>
+                        </div>
+                    </div>
+                    <div class="col" id="Navigations">
+                        <h2>Links</h2>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Service</li>
+                            <li>Gallery</li>
+                            <li>Skills</li>
+                            <li>Projects</li>
+                            <li>contact</li>
+                        </ul>
+                    </div>
+                    <div class="col" id="services">
+                        <h2>Services</h2>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>UI / UX Design</li>
+                            <li>Desktop Application</li>
+                            <li>Web Design</li>
+                            <li>Graphics Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p id="copyRightTag">Copyright © 2023. All rights reserved</p>
         </section>
 
     </main>
@@ -318,7 +343,8 @@ you can get in touch with me here.I am highly focused software Engineer and deve
    <script>
 
 
-   $("#mainSectionImage").css('display','block');
+
+       $("#mainSectionImage").css('display','block');
         $("#mainSectionAbout").css('display','block');
         $("#about").css('display','none');
         $("#service").css('display','none');
@@ -339,6 +365,7 @@ you can get in touch with me here.I am highly focused software Engineer and deve
         });
 
         $("#NavAbout").click(function () {
+            // $("#NavAbout").css('color','yellow');
             $("#mainSectionImage").css('display','none');
             $("#mainSectionAbout").css('display','none');
             $("#about").css('display','block');

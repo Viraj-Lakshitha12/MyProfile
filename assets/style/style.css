@@ -62,7 +62,7 @@
     letter-spacing: -0.05em;
     font-family: 'Anton', Arial, sans-serif;
     user-select: none;
-    font-size: 60px;
+    font-size: 40px;
     transition: all 0.25s ease-out;
 }
 
@@ -74,12 +74,10 @@
 @keyframes my-keyframes {
     0% {
         text-shadow: #ffca2c;
-        /*text-shadow: makelongshadow(100,1);*/
         color: #f3f3f3;
         transform: scale(1.5, 1.5);
     }
     10% {
-        /*//text-shadow: makelongshadow(100,1.5);*/
         text-shadow: #ffca2c;
         color: #f3f3f3;
         transform: scale(1.5, 1.5);
@@ -667,4 +665,34 @@
     background-color: #D9D9D9;
     color: black;
     font-weight: bolder;
+}
+#MyNameTag{
+    color: RGB(15,251,81,100%);
+}
+#contactImages{
+    display: flex;
+    justify-content: space-around;
+}
+
+#copyRightTag{
+    margin-left: 650px;
+    font-weight: bolder;
+}
+#contactAbout{
+    padding:35px;
+}
+#Navigations{
+    padding: 50px;
+    margin-left: 250px;
+}
+#services{
+    padding: 50px;
+    margin-right: 0px;
+}
+
+#map{
+    cursor: pointer;
+}
+#phoneIcon{
+    cursor: pointer;
 }
