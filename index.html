@@ -58,7 +58,6 @@
                    </ul>
                    <form class="d-flex" role="search">
                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                       <button class="btn btn-outline-success" type="submit">Search</button>
                    </form>
 
                </div>
@@ -123,13 +122,44 @@ you can get in touch with me here.I am highly focused software Engineer and deve
 
 <!--        service-->
         <section id="service">
-            <h1><b><u>Service</u></b></h1>
-            <div>
-                <h3> web Design</h3>
-                <h3> UI / UX </h3>
-                <h3> Desktop Application</h3>
-                <h3> web Design</h3>
+            <div >
+                <h1 id="serviceTag">Service</h1>
             </div>
+
+            <div class="myServices">
+                <div >
+                        <h3 class="serviceType"> web Design</h3>
+                        <p class="ServiceDetails">I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or an employer looking to hire.you can get in touch with me here.</p>
+                </div>
+                <div >
+                        <h3 class="serviceType"> UI / UX </h3>
+                        <p class="ServiceDetails">I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or an employer looking to hire.you can get in touch with me here.</p>
+                </div>
+                <div >
+                        <h3 class="serviceType"> Desktop Application</h3>
+                        <p class="ServiceDetails">I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or an employer looking to hire.you can get in touch with me here.</p>
+                </div>
+            </div>
+         <br>
+         <br>
+            <div class="myServices">
+                <div >
+                      <h3 class="serviceType"> web Development</h3>
+                      <p class="ServiceDetails">I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or an employer looking to hire.you can get in touch with me here.</p>
+                </div>
+                <div >
+                      <h3 class="serviceType"> UI / UX </h3>
+                      <p class="ServiceDetails">I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or an employer looking to hire.you can get in touch with me here.</p>
+
+                </div>
+                <div >
+                       <h3 class="serviceType"> Graphics design</h3>
+                       <p class="ServiceDetails">I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or an employer looking to hire.you can get in touch with me here.</p>
+                </div>
+            </div>
+
+
+
         </section>
 
 <!--        gallery-->
@@ -147,20 +177,43 @@ you can get in touch with me here.I am highly focused software Engineer and deve
 
 <!--        skills-->
         <section id="skills">
-            <h1><b><u>My Expertise!!</u></b></h1>
-            <div>
-                <h3><img src="assets/images/download (15).png" width="50">Skills Expertise</h3>
+            <div id="expertiseDiv"></div>
+            <h1 id="expertiseTag">My Expertise!!</h1>
+            <div >
+                <h3 class="skillsExpertiseTag"><img src="assets/images/download (15).png" width="50">Skills Expertise</h3>
             </div>
-            <div>
-                <img src="assets/images/download (10).png" width="150" alt="java">
-                <img src="assets/images/images (6).png" width="110"  height="110" alt="mysql">
-                <img src="assets/images/download (11).png" width="120" height="150"  alt="ui">
-                <img src="assets/images/5234318.png" width="120"   alt="Web Development">
-                <img src="assets/images/download (13).png" width="150"   alt="HTML">
-                <img src="assets/images/download (14).png" width="170"   alt="CSS">
-                <img src="assets/images/images (7).png" width="150"   alt="java Script">
-                <img src="assets/images/images (7).png" width="150"   alt="java Script">
+
+            <section id="slideshow">
+                <div class="entire-content">
+                    <div class="content-carrousel">
+                        <figure class="shadow"><img src="assets/images/download (10).png"/>Java</figure>
+                        <figure class="shadow"><img src="assets/images/download (11).png"/></figure>
+                        <figure class="shadow"><img src="assets/images/5234318.png" alt="Web Development"/></figure>
+                        <figure class="shadow"><img src="assets/images/download (13).png" alt="HTML"/></figure>
+                        <figure class="shadow"><img src="assets/images/download (14).png"  alt="CSS"/></figure>
+                        <figure class="shadow"><img src="assets/images/images (6).png" alt="mysql"/></figure>
+                        <figure class="shadow"><img src="assets/images/images (7).png" alt="java Script"/></figure>
+                        <figure class="shadow"><img src="assets/images/download (17).png"/></figure>
+                        <figure class="shadow"><img src="assets/images/download (18).png"/></figure>
+                        <figure class="shadow"><img src="assets/images/images (9).png"/></figure>
+                    </div>
+                </div>
+            </section>
+
+            <div >
+                <h3 class="skillsExpertiseTag" id="languageExpertise"><img src="assets/images/download (16).png" width="50">Language Expertise</h3>
             </div>
+            <div id="englishLang">
+                <p>English</p>
+                <div class="languageDetails"></div>
+
+            </div>
+            <div id="sinhalaLang">
+                <p>Sinhala</p>
+                <div class="languageDetails"></div>
+            </div>
+
+
         </section>
 
 <!--        projects-->
@@ -176,23 +229,71 @@ you can get in touch with me here.I am highly focused software Engineer and deve
 
 <!--        contact-->
         <section id="contact">
-            <div>
-                <form>
-                    <label for="name">Your Name:</label>
-                    <input type="text"placeholder="First " id="name">
-                    <input type="text"placeholder="Last " >
-                    <label for="email">Email:</label>
-                    <input type="text"placeholder="Email" id="email" ><br><br>
-                    <label for="Subject">Email:</label>
-                    <input type="text"placeholder="Subject" id="Subject"><br><br>
-                    <label for="text">Message:</label>
-                    <textarea name="text" id="text" cols="80" rows="3"></textarea><br><br>
-                    <input type="button" value="Send Message">
-                </form>
+            <div id="contactDiv">
+                <h1 id="contactTag">Contact</h1>
             </div>
+            <div>
+                <div class="screen">
+                    <div class="screen-header">
+                        <div class="screen-header-left">
+                            <div class="screen-header-button close"></div>
+                            <div class="screen-header-button maximize"></div>
+                            <div class="screen-header-button minimize"></div>
+                        </div>
+                        <div class="screen-header-right">
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                        </div>
+                    </div>
+                    <div class="screen-body">
+                        <div class="screen-body-item left">
+                            <div class="app-title">
+                                <span>CONTACT</span>
+                                <span>US</span>
+                            </div>
+
+                        </div>
+                        <div class="screen-body-item">
+                            <div class="app-form">
+                                <div class="app-form-group">
+                                    <input class="app-form-control" placeholder="NAME" value="Viraj Lakshitha">
+                                </div>
+                                <div class="app-form-group">
+                                    <input class="app-form-control" placeholder="EMAIL">
+                                </div>
+                                <div class="app-form-group">
+                                    <input class="app-form-control" placeholder="CONTACT NO">
+                                </div>
+                                <div class="app-form-group message">
+                                    <input class="app-form-control" placeholder="MESSAGE">
+                                </div>
+                                <div class="app-form-group buttons">
+                                    <button class="app-form-button">CANCEL</button>
+                                    <button class="app-form-button">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="credits"> inspired by
+                    <a class="credits-link" href="https://www.linkedin.com/in/viraj-lakshitha-325b2b265/" target="_blank">
+                        <svg class="dribbble" viewBox="0 0 200 200">
+                            <g stroke="#ffffff" fill="none">
+                                <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                                <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+                                <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+                                <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+                            </g>
+                        </svg>
+                        Viraj
+                    </a>
+                </div>
+            </div><div>
 
             <div>
-                <h3>To know more about me, catch me through...</h3>
+                <h3 id="ToKnowDiv"><img src="assets/images/download (15).png" width="50">    To know more about me, catch me through...</h3>
+            </div>
                 <h4>Viraj Lakshitha</h4>
                 <p>A passionate Software Engineer from Sri Lanka.my passion for software lies with dreaming up ideas and making them come true with elegant interfaces. i take great care in the experience, architecture, and code quality of the things I build.</p>
             </div>
@@ -216,7 +317,8 @@ you can get in touch with me here.I am highly focused software Engineer and deve
    <script src="../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
    <script>
 
-        $("#mainSectionImage").css('display','block');
+
+   $("#mainSectionImage").css('display','block');
         $("#mainSectionAbout").css('display','block');
         $("#about").css('display','none');
         $("#service").css('display','none');
@@ -286,6 +388,16 @@ you can get in touch with me here.I am highly focused software Engineer and deve
             $("#projects").css('display','block');
             $("#contact").css('display','none');
         });
+       $("#NavContact").click(function () {
+           $("#mainSectionImage").css('display','none');
+           $("#mainSectionAbout").css('display','none');
+           $("#about").css('display','none');
+           $("#service").css('display','none');
+           $("#gallery").css('display','none');
+           $("#skills").css('display','none');
+           $("#projects").css('display','none');
+           $("#contact").css('display','block');
+       });
    </script>
 </body>
 </html>
