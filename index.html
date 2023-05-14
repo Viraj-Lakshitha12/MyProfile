@@ -8,13 +8,25 @@
     <meta name="keyword" content="Viraj,web Designer,My Portfolio">
     <meta name="description" content="This is my web page">
     <meta name="viewport" content="width=device-width initial scale=1">
+    <!--    import bootstrap lib-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--    import css styles lib-->
     <link rel="stylesheet" href="assets/style/style.css">
+    <!--    import font  awesome lib-->
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
-
+    <!--    import AOS lib-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--    import animate.css lib-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--    import  preloader-->
+    <link rel="stylesheet" href="assets/style/preloader.css"/>
 
 </head>
 <body>
+<!--preloader-->
+<!--<div id="pre-Loader" >-->
+<!--    <img src="assets/images/Spinner-2.4s-214px.gif" alt="img">-->
+<!--</div>-->
 
    <header>
 <!--        navigation bar-->
@@ -63,17 +75,18 @@
                </div>
            </div>
        </nav>
-
    </header>
 
 <!--    mainSection-->
     <main >
 <!--        home-->
         <section class="row container-fluid homeNav" id="mainSection">
-            <div class="col" id="mainSectionImage">
+<!--            main Image-->
+            <div class="col animate__animated animate__bounce" data-aos="zoom-out"  id="mainSectionImage">
                 <img src="assets/images/my3.jpg" id="mainImage" width="450" >
             </div>
-            <div class="col" id="mainSectionAbout">
+
+            <div class="col" id="mainSectionAbout" data-aos="zoom-in-left">
                 <p id="welcomeTag"><b> WELCOME TO MY WORLD</b></p>
                 <h1 id="iAmTag">HI I'AM</h1><h2 id="nameTag">Viraj</h2>
                 <h2 id="createTag">Creative Web And App Developer</h2>
@@ -85,9 +98,8 @@
                 <img src="assets/images/download (8).png" width="39" height="39">
             </div>
         </section>
-
 <!--    about-->
-        <section id="about">
+        <section id="about" >
             <div>
                 <div id="aboutDiv">
                 <h1 id="aboutTagName">About Me</h1>
@@ -107,7 +119,7 @@ you can get in touch with me here.I am highly focused software Engineer and deve
                 <p id="myDegree"><b>Degree :</b>BSc (Hons) Computer Science </p>
             </div>
             <div class="btnAbout">
-                <input type="button" id="btnHireMe" value="Hire Me">
+                <input type="button" class="animate__shakeY" id="btnHireMe" value="Hire Me">
                 <input type="button" id="btnContact" value="Contact">
             </div>
             <div class="projectAndExpBtn">
@@ -119,7 +131,6 @@ you can get in touch with me here.I am highly focused software Engineer and deve
                 </div>
             </div>
         </section>
-
 <!--        service-->
         <section id="service">
             <div >
@@ -161,23 +172,49 @@ you can get in touch with me here.I am highly focused software Engineer and deve
 
 
         </section>
-
 <!--        gallery-->
         <section id="gallery">
             <div >
                 <h1 class="GalleryTag">Gallery</h1>
             </div>
-            <div>
-                <img src="assets/images/my3.jpg" width="300">
-                <img src="assets/images/my2.jpg" width="300">
-                <img src="assets/images/WhatsApp Image 2023-02-11 at 10.08.22.jpg" width="400">
-                <img src="assets/images/my4.JPG" width="400">
-                <img src="assets/images/my5.JPG" width="400">
-                <img src="assets/images/my6.JPG" width="500">
-                <img src="assets/images/tech image.gif" width="500">
+
+            <div class="container">
+                <div class="row" >
+
+<!--                    <img src="assets/images/my3.jpg" alt="Image" onclick="openModal(this)">-->
+
+<!--                    <div id="myModal" onclick="closeModal()">-->
+<!--                        <img id="modalImage" src="assets/images/my3.jpg" alt="Modal Image">-->
+<!--                    </div>-->
+
+                    <img class="col-md-4"  src="assets/images/my3.jpg" alt="Image" onclick="openModal(this)">
+                    <img class="col-md-5" src="assets/images/my2.jpg" class="img-fluid rounded" onclick="openModal(this)" >
+                    <img class="col-md-3"src="assets/images/my4.jpg" class="img-fluid rounded" onclick="openModal(this)">
+
+                </div>
+                <div class="row">
+
+                    <img class="col-md-4"  src="assets/images/my5.JPG" class="img-fluid rounded" onclick="openModal(this)">
+                    <img class="col-md-4"  src="assets/images/my6.JPG" class="img-fluid rounded" onclick="openModal(this)">
+                    <img class="col-md-4"  src="assets/images/WhatsApp Image 2023-02-11 at 10.08.22.jpg" onclick="openModal(this)">
+
+                </div>
+                    <div id="myModal" onclick="closeModal()">
+                        <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img  id="modalImage" src="assets/images/my3.jpg" class="img-fluid rounded">
+                        </a>
+                    </div>
+
+
+
+
+
+
+
+
+
             </div>
         </section>
-
 <!--        skills-->
         <section id="skills">
             <div id="expertiseDiv"></div>
@@ -218,18 +255,19 @@ you can get in touch with me here.I am highly focused software Engineer and deve
 
 
         </section>
-
 <!--        projects-->
         <section id="projects">
             <h1><b><u>Projects</u></b></h1>
-            <div>
-                <img src="assets/images/WhatsApp Image 2023-02-21 at 17.44.28.jpg" width="750" height="450" alt="Phone Shop Management System">
-                <img src="assets/images/new1.jpg" width="750" height="450" alt="Library Management System">
-                <img src="assets/images/WhatsApp Image 2023-02-22 at 22.25.37.jpg" width="750" height="450" alt="Library Management System">
-            </div>
+<!--            <div>-->
+<!--                <img src="assets/images/WhatsApp Image 2023-02-21 at 17.44.28.jpg" width="750" height="450" alt="Phone Shop Management System">-->
+<!--                <img src="assets/images/new1.jpg" width="750" height="450" alt="Library Management System">-->
+<!--                <img src="assets/images/WhatsApp Image 2023-02-22 at 22.25.37.jpg" width="750" height="450" alt="Library Management System">-->
+<!--            </div>-->
+
+
+
             <p>See All My Projects <a href="https://github.com/viraj-Lakhitha">Click Here</a></p>
         </section>
-
 <!--        contact-->
         <section id="contact">
             <div id="contactDiv">
@@ -342,9 +380,37 @@ you can get in touch with me here.I am highly focused software Engineer and deve
 
     </main>
 
-   <script src="../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
-   <script>
 
+<!--   Import AOS lib-->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--   Import jQuery -->
+   <script src="../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+
+    <script>
+       function openModal(image) {
+           var modal = document.getElementById("myModal");
+           var modalImage = document.getElementById("modalImage");
+
+           modalImage.src = image.src;
+           modal.style.display = "block";
+       }
+
+       function closeModal() {
+           var modal = document.getElementById("myModal");
+           modal.style.display = "none";
+       }
+
+       // init AOS
+       AOS.init();
+
+       //page eka load wenawada blnwa
+
+       $(document).ready(() =>{
+           setTimeout(() =>{
+               $("#pre-Loader").css('display','none')
+           },1000)
+
+       })
 
        $("#mainSectionImage").css('display','block');
         $("#mainSectionAbout").css('display','block');
