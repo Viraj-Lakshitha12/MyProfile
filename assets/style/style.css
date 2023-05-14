@@ -208,7 +208,7 @@
     justify-content: space-around;
 }
 
-.myServices>div{
+.myServices>div>div{
     width: 400px;
     height: 200px;
     margin: 10px;
