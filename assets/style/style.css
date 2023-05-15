@@ -45,10 +45,28 @@
 #nameTag{
     font-family: 'Delicious Handrawn', cursive;
     font-size: 70px;
-    margin-left: 240px;
+    margin-left: 50px;
     margin-top: -110px;
-    padding: 10px;
+    padding: 5px;
     color: #bfff00;
+}
+#mainSection >div > h4{
+    margin-left: 180px;
+    margin-top: -46px;
+}
+#mainSection >div > h4 > span:before{
+    content: " Web Developer";
+    animation: animate infinite 3s ease-in-out;
+    color: red;
+
+}
+@keyframes animate {
+    0%{
+        content: "FullStack Developer";
+    }
+    50%{
+        content: "UI/UX Designer";
+    }
 }
 #createTag{
     padding: 5px;
@@ -652,7 +670,21 @@
     .app-title:after {
         display: none;
     }
+    #ToKnowDiv{
+        font-size: 12px;
+    }
+    #contactImages{
+        display: flex;
+        flex-direction: column;
+    }
+    #ContactFooter{
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
+
 
 @media screen and (max-width: 600px) {
     .screen-body {
@@ -662,8 +694,20 @@
     .screen-body-item {
         padding: 0;
     }
+
 }
 
+@media screen and (max-width: 999px) {
+    #navItems{
+        margin-left: 110px;
+        font-size:20px; ;
+    }
+    #mainSection{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
 #ToKnowDiv{
     background-color: #D9D9D9;
     color: black;
@@ -673,12 +717,13 @@
     color: RGB(15,251,81,100%);
 }
 #contactImages{
+    margin-left: 200px;
     display: flex;
     justify-content: space-around;
 }
 
 #copyRightTag{
-    margin-left: 650px;
+    margin-left: 530px;
     font-weight: bolder;
 }
 #contactAbout{
@@ -737,4 +782,90 @@
 }
 .row > img {
     padding: 35px;
+}
+@media all and (max-width: 768px) {
+    #mainSectionImage{
+        width: 300px;
+        margin-left: 50px;
+    }
+    #mainSectionAbout{
+        margin-left: 200px;
+        margin-top: 80px;
+    }
+    #mainSectionAbout > p{
+        font-size: 25px;
+    }
+    #mainSectionAbout > h1{
+        font-size: 30px;
+        margin-top: -20px;
+    }
+    #nameTag{
+        font-size: 35px;
+    }
+    #mainSectionAbout > h2{
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    #mainSectionAbout > input{
+        width:150px ;
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 660px) {
+    #mainImage{
+        width: 350px;
+    }
+    #mainSectionAbout{
+       margin-left: 150px;
+    }
+
+}
+
+@media all and (max-width: 426px){
+    #mainImage{
+        width: 200px;
+        margin-left: 40px;
+    }
+    #mainSectionAbout{
+        margin-left: 40px;
+    }
+    #animationServices > span {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 376px){
+    #mainImage{
+        width: 150px;
+        margin-left: -10px;
+    }
+    #mainSectionAbout{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    #mainSectionAbout > p{
+         font-size: 15px;
+     }
+    #mainSectionAbout > h1{
+         font-size: 20px;
+        margin-left: -15px;
+     }
+    #mainSectionAbout > h1 > span{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    #mainSectionAbout > input {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #mainSectionAbout > #animationServices {
+        font-size: 20px;
+        margin-left: 110px;
+        margin-top: -30px;
+    }
+}
+@media all and (max-width: 321px){
+    #mainSectionImage{
+        width: 200px;
+    }
 }
