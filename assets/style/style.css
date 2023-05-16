@@ -26,7 +26,7 @@
     margin-left: 70px;
 }
 #mainSectionAbout{
-    margin-top: 190px;
+    margin-top: 130px;
     margin-right: 200px;
 }
 #welcomeTag{
@@ -72,6 +72,7 @@
     padding: 5px;
 }
 
+
 #aboutTagName{
     margin-left: 38vw;
     padding: 10px;
@@ -92,38 +93,7 @@
     animation-iteration-count: 1;
 
 }
-/*@keyframes my-keyframes {*/
-/*    0% {*/
-/*        text-shadow: #ffca2c;*/
-/*        color: #f3f3f3;*/
-/*        transform: scale(1.5, 1.5);*/
-/*    }*/
-/*    10% {*/
-/*        text-shadow: #ffca2c;*/
-/*        color: #f3f3f3;*/
-/*        transform: scale(1.5, 1.5);*/
-/*    }*/
-/*    15% {*/
-/*        color: #f3f3f3;*/
-/*    }*/
-/*    20% {*/
-/*        color: #e90418;*/
-/*        text-shadow: none;*/
-/*        transform: scale(1.1, 1.1);*/
-/*    }*/
-/*    75% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*    80% {*/
-/*        opacity: 0;*/
-/*        color: #e90418;*/
-/*        transform: scale(0.85, 0.9);*/
-/*    }*/
 
-/*    100% {*/
-/*        opacity: 0;*/
-/*    }*/
-/*}*/
 
 #HelloTag{
     margin-left: 10px;
@@ -864,8 +834,43 @@
         margin-top: -30px;
     }
 }
-@media all and (max-width: 321px){
-    #mainSectionImage{
-        width: 200px;
+@media all and (max-width: 321px) {
+    #mainImage {
+        display: none;
+    }
+
+    #mainSectionAbout {
+        margin-left: -5px;
+    }
+
+    #mainSectionAbout > h2 {
+        font-size: 12px;
+    }
+
+    #mainSectionAbout > input {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    #mainSectionAbout > h4 {
+        font-size: 13px;
+    }
+
+    #mainSectionAbout > h4 > span {
+        font-size: 10px;
     }
 }
+
+#about{
+    margin-top: 100px;
+}
+#service{
+    margin-top: 100px;
+}
+#gallery{
+    margin-top: 100px;
+}
+#skills{
+    margin-top: 100px;
+}
+

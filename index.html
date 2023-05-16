@@ -30,7 +30,7 @@
 
    <header>
 <!--        navigation bar-->
-       <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark i" >
+       <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark i" id="navigationBar">
            <div class="container-fluid">
                <a class="navbar-brand" id="nameLabel" href="#">Viraj</a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,27 +44,27 @@
                        </li>
 
                        <li class="nav-item " >
-                           <a class="nav-link" id="NavAbout" href="#" >About</a>
+                           <a class="nav-link" id="NavAbout" href="#about" >About</a>
                        </li>
 
                        <li class="nav-item ">
-                           <a class="nav-link " id="NavService" href="#">Service</a>
+                           <a class="nav-link " id="NavService" href="#service">Service</a>
                        </li>
 
                        <li class="nav-item ">
-                           <a class="nav-link " id="NavGallery" href="#">Gallery</a>
+                           <a class="nav-link " id="NavGallery" href="#gallery">Gallery</a>
                        </li>
 
                        <li class="nav-item ">
-                           <a class="nav-link " id="NavSkills" href="#">Skills</a>
+                           <a class="nav-link " id="NavSkills" href="#skills">Skills</a>
                        </li>
 
                        <li class="nav-item ">
-                           <a class="nav-link " id="NavProjects" href="#">Projects</a>
+                           <a class="nav-link " id="NavProjects" href="#projects">Projects</a>
                        </li>
 
                        <li class="nav-item ">
-                           <a class="nav-link " id="NavContact" href="#">Contact</a>
+                           <a class="nav-link " id="NavContact" href="#contact">Contact</a>
                        </li>
 
                    </ul>
@@ -443,87 +443,93 @@
 
        })
 
-       $("#mainSectionImage").css('display','block');
-        $("#mainSectionAbout").css('display','block');
-        $("#about").css('display','none');
-        $("#service").css('display','none');
-        $("#gallery").css('display','none');
-        $("#skills").css('display','none');
-        $("#projects").css('display','none');
-        $("#contact").css('display','none');
+       // $(window).on('resize',() => {
+       //     if ($('window').width < 700) {
+       //         $("#mainSectionImage").css('display','block');
+       //         $("#mainSectionAbout").css('display','block');
+       //         $("#about").css('display','none');
+       //         $("#service").css('display','none');
+       //         $("#gallery").css('display','none');
+       //         $("#skills").css('display','none');
+       //         $("#projects").css('display','none');
+       //         $("#contact").css('display','none');
+       //
+       //         $("#NavHome").click(function () {
+       //             $("#mainSectionImage").css('display','block');
+       //             $("#mainSectionAbout").css('display','block');
+       //             $("#about").css('display','none');
+       //             $("#service").css('display','none');
+       //             $("#gallery").css('display','none');
+       //             $("#skills").css('display','none');
+       //             $("#projects").css('display','none');
+       //             $("#contact").css('display','none');
+       //         });
+       //
+       //         $("#NavAbout").click(function () {
+       //             // $("#NavAbout").css('color','yellow');
+       //             $("#mainSectionImage").css('display','none');
+       //             $("#mainSectionAbout").css('display','none');
+       //             $("#about").css('display','block');
+       //             $("#service").css('display','none');
+       //             $("#gallery").css('display','none');
+       //             $("#skills").css('display','none');
+       //             $("#projects").css('display','none');
+       //             $("#contact").css('display','none');
+       //         });
+       //         $("#NavService").click(function () {
+       //             $("#mainSectionImage").css('display','none');
+       //             $("#mainSectionAbout").css('display','none');
+       //             $("#about").css('display','none');
+       //             $("#service").css('display','block');
+       //             $("#gallery").css('display','none');
+       //             $("#skills").css('display','none');
+       //             $("#projects").css('display','none');
+       //             $("#contact").css('display','none');
+       //         });
+       //         $("#NavGallery").click(function () {
+       //             $("#mainSectionImage").css('display','none');
+       //             $("#mainSectionAbout").css('display','none');
+       //             $("#about").css('display','none');
+       //             $("#service").css('display','none');
+       //             $("#gallery").css('display','block');
+       //             $("#skills").css('display','none');
+       //             $("#projects").css('display','none');
+       //             $("#contact").css('display','none');
+       //         });
+       //         $("#NavSkills").click(function () {
+       //             $("#mainSectionImage").css('display','none');
+       //             $("#mainSectionAbout").css('display','none');
+       //             $("#about").css('display','none');
+       //             $("#service").css('display','none');
+       //             $("#gallery").css('display','none');
+       //             $("#skills").css('display','block');
+       //             $("#projects").css('display','none');
+       //             $("#contact").css('display','none');
+       //         });
+       //         $("#NavProjects").click(function () {
+       //             $("#mainSectionImage").css('display','none');
+       //             $("#mainSectionAbout").css('display','none');
+       //             $("#about").css('display','none');
+       //             $("#service").css('display','none');
+       //             $("#gallery").css('display','none');
+       //             $("#skills").css('display','none');
+       //             $("#projects").css('display','block');
+       //             $("#contact").css('display','none');
+       //         });
+       //         $("#NavContact").click(function () {
+       //             $("#mainSectionImage").css('display','none');
+       //             $("#mainSectionAbout").css('display','none');
+       //             $("#about").css('display','none');
+       //             $("#service").css('display','none');
+       //             $("#gallery").css('display','none');
+       //             $("#skills").css('display','none');
+       //             $("#projects").css('display','none');
+       //             $("#contact").css('display','block');
+       //         });
+       //     }
+       // });
 
-        $("#NavHome").click(function () {
-             $("#mainSectionImage").css('display','block');
-             $("#mainSectionAbout").css('display','block');
-            $("#about").css('display','none');
-            $("#service").css('display','none');
-            $("#gallery").css('display','none');
-            $("#skills").css('display','none');
-            $("#projects").css('display','none');
-            $("#contact").css('display','none');
-        });
 
-        $("#NavAbout").click(function () {
-            // $("#NavAbout").css('color','yellow');
-            $("#mainSectionImage").css('display','none');
-            $("#mainSectionAbout").css('display','none');
-            $("#about").css('display','block');
-            $("#service").css('display','none');
-            $("#gallery").css('display','none');
-            $("#skills").css('display','none');
-            $("#projects").css('display','none');
-            $("#contact").css('display','none');
-        });
-        $("#NavService").click(function () {
-            $("#mainSectionImage").css('display','none');
-            $("#mainSectionAbout").css('display','none');
-            $("#about").css('display','none');
-            $("#service").css('display','block');
-            $("#gallery").css('display','none');
-            $("#skills").css('display','none');
-            $("#projects").css('display','none');
-            $("#contact").css('display','none');
-        });
-        $("#NavGallery").click(function () {
-            $("#mainSectionImage").css('display','none');
-            $("#mainSectionAbout").css('display','none');
-            $("#about").css('display','none');
-            $("#service").css('display','none');
-            $("#gallery").css('display','block');
-            $("#skills").css('display','none');
-            $("#projects").css('display','none');
-            $("#contact").css('display','none');
-        });
-        $("#NavSkills").click(function () {
-            $("#mainSectionImage").css('display','none');
-            $("#mainSectionAbout").css('display','none');
-            $("#about").css('display','none');
-            $("#service").css('display','none');
-            $("#gallery").css('display','none');
-            $("#skills").css('display','block');
-            $("#projects").css('display','none');
-            $("#contact").css('display','none');
-        });
-        $("#NavProjects").click(function () {
-            $("#mainSectionImage").css('display','none');
-            $("#mainSectionAbout").css('display','none');
-            $("#about").css('display','none');
-            $("#service").css('display','none');
-            $("#gallery").css('display','none');
-            $("#skills").css('display','none');
-            $("#projects").css('display','block');
-            $("#contact").css('display','none');
-        });
-       $("#NavContact").click(function () {
-           $("#mainSectionImage").css('display','none');
-           $("#mainSectionAbout").css('display','none');
-           $("#about").css('display','none');
-           $("#service").css('display','none');
-           $("#gallery").css('display','none');
-           $("#skills").css('display','none');
-           $("#projects").css('display','none');
-           $("#contact").css('display','block');
-       });
    </script>
 </body>
 </html>
