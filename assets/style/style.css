@@ -753,10 +753,32 @@
 .row > img {
     padding: 35px;
 }
-@media all and (max-width: 768px) {
+
+@media all and (max-width: 1024px) and (min-width:860px ) {
+    #mainSectionImage{
+        width: 400px;
+        margin-left: 180px;
+    }
+    #mainSectionAbout{
+        margin-left: 230px;
+    }
+}
+@media all and (max-width: 860px) {
+    #mainImage{
+        width: 400px;
+        margin-left: 180px;
+    }
+    #mainSectionAbout{
+        margin-left: 150px;
+    }
+}
+@media all and (max-width: 768px) and (min-width: 660px){
     #mainSectionImage{
         width: 300px;
         margin-left: 50px;
+    }
+    #navigationBar{
+        display: none;
     }
     #mainSectionAbout{
         margin-left: 200px;
@@ -790,6 +812,16 @@
     }
 
 }
+@media all and (max-width: 530px) {
+    #navigationBar{
+        display: none;
+    }
+    #mainImage{
+        width: 250px;
+        margin-left: 110px;
+    }
+}
+
 
 @media all and (max-width: 426px){
     #mainImage{
@@ -813,7 +845,7 @@
         margin-left: 20px;
     }
     #mainSectionAbout > p{
-         font-size: 15px;
+         font-size: 12px;
      }
     #mainSectionAbout > h1{
          font-size: 20px;
