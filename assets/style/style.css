@@ -753,23 +753,210 @@
 .row > img {
     padding: 35px;
 }
+@media all and (max-width: 1370px){
+    #mainSectionAbout{
+        margin-left: 10px;
+    }
+    #welcomeTag{
+        font-size: 30px;
+    }
+    #iAmTag{
+        font-size: 30px;
+    }
+    #createTag{
+        font-size: 26px;
+    }
+    #homeReadMoreBtn{
+        margin-top: 20px;
+    }
+    #navigationBar{
+        margin-right: 350px;
+    }
 
-@media all and (max-width: 1024px) and (min-width:860px ) {
-    #mainSectionImage{
+}
+@media all and (max-width: 1330px){
+    #mainSectionAbout{
+        margin-left: 20px;
+    }
+    #welcomeTag{
+        font-size: 30px;
+    }
+    #iAmTag{
+        font-size: 30px;
+    }
+    #createTag{
+        font-size: 26px;
+    }
+    #homeReadMoreBtn{
+        margin-top: 20px;
+    }
+    #navigationBar{
+        margin-right: 350px;
+    }
+
+}
+@media all and (max-width: 1265px) and (min-width: 1200px){
+    #mainSectionAbout{
+        margin-left: 50px;
+    }
+    #welcomeTag{
+        font-size: 25px;
+    }
+    #iAmTag{
+        font-size: 25px;
+    }
+    #nameTag{
+        font-size: 45px;
+    }
+    #createTag{
+        font-size: 21px;
+    }
+    #homeReadMoreBtn{
+        margin-top: 20px;
+    }
+    #animationServices > h4 > span {
+        font-size: 10px;
+    }
+    /*#navigationBar{*/
+    /*    margin-right: 350px;*/
+    /*}  */
+}
+@media all and (max-width: 1210px){
+    #mainSectionAbout{
+        margin-left: 10px;
+    }
+    #welcomeTag{
+        font-size: 25px;
+    }
+    #iAmTag{
+        font-size: 25px;
+    }
+    #nameTag{
+        font-size: 45px;
+    }
+    #createTag{
+        font-size: 21px;
+    }
+    #homeReadMoreBtn{
+        margin-top: 20px;
+    }
+    #animationServices > h4 > span {
+        font-size: 10px;
+    }
+    #navItems{
+        margin-left: 520px;
+    }
+    #searchBar{
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 1173px) and (min-width:860px ) {
+    #mainSection{
+        margin-left: 60px;
+    }
+    #mainImage{
         width: 400px;
-        margin-left: 180px;
+        margin-left: 50px;
     }
     #mainSectionAbout{
-        margin-left: 230px;
+        margin-left: 60px;
+    }
+    #navItems{
+        margin-left: 480px;
+    }
+    #searchBar{
+        display: none;
+    }
+}
+@media all and (max-width: 1105px){
+    #mainSection{
+        margin-left: 0px;
+    }
+    #mainImage{
+        width: 350px;
+    }
+    #mainSectionAbout{
+        margin-left: 10px;
+    }
+    #welcomeTag{
+        font-size: 20px;
+    }
+    #iAmTag{
+        font-size: 20px;
+    }
+    #nameTag{
+        font-size: 35px;
+    }
+    #createTag{
+        font-size: 21px;
+    }
+    #homeReadMoreBtn{
+        margin-top: 20px;
+    }
+    #animationServices > h4 > span {
+        font-size: 10px;
+    }
+    #navItems{
+        margin-left: 430px;
+    }
+    #searchBar{
+        display: none;
+    }
+}
+
+@media all and (max-width: 998px){
+
+    #mainSectionImage{
+        margin-top: 50px;
+    }
+    #mainImage{
+        width: 320px;
+    }
+    #mainSectionAbout{
+        margin-left: 400px;
+        margin-top: -270px;
+    }
+    #welcomeTag{
+        font-size: 20px;
+    }
+    #iAmTag{
+        font-size: 20px;
+    }
+    #nameTag{
+        font-size: 35px;
+    }
+    #createTag{
+        font-size: 21px;
+    }
+    #homeReadMoreBtn{
+        margin-top: 20px;
+    }
+    #animationServices > h4 > span {
+        font-size: 10px;
+    }
+    #navItems{
+        margin-left: 330px;
+    }
+    #searchBar{
+        display: none;
     }
 }
 @media all and (max-width: 860px) {
     #mainImage{
-        width: 400px;
+        width: 320px;
         margin-left: 180px;
     }
     #mainSectionAbout{
-        margin-left: 150px;
+       margin-top: 80px;
+        margin-left: 200px;
+    }
+    #navItems{
+        display: none;
+    }
+    #searchBar{
+        display: none;
     }
 }
 @media all and (max-width: 768px) and (min-width: 660px){
