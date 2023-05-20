@@ -1157,16 +1157,83 @@
 
     /*----------skills section styles---------*/
     #expertiseTag{
-        font-size: 35px;
-        margin-left: 95px;
+        font-size: 30px;
+        margin-left: 120px;
     }
-    .slideshow {
-        margin: 0 auto;
-        padding-top: 5px;
-        height: 600px;
-        width: 100%;
-        background-color: #070000;
-        box-sizing: border-box;
+    #SkillsDiv{
+        width: 500px;
+    }
+    #LanguageDiv{
+        width: 500px;
+    }
+
+    /*project section styles*/
+    #projectNameTag {
+        margin-top: 160px;
+    }
+    #projectSection{
+        display: flex;
+        flex-direction: column;
+    }
+    #projectSection > div > strong {
+        font-size: 10px;
+        margin-left: 80px;
+    }
+    #AllProjectLink{
+        font-size: 15px;
+    }
+    /*contact section styles*/
+    #contactScreen{
+        margin-left: 50px;
+    }
+    #TODIv{
+        width: 510px;
+    }
+   #map{
+       margin: 30px 0px 30px 0px;
+   }
+    #imgEmail{
+        margin: 30px 0px 30px 0px;
+    }
+    #ImgPhone{
+        margin: 30px 0px 30px 0px;
+    }
+    #ContactFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    #desc{
+        width: 430px;
+    }
+    #Navigations{
+        margin-top: -70px;
+    }
+    #FooterLinkTagName{
+        margin-left: -140px;
+    }
+    #NavigationFooter{
+        margin-left: -140px;
+    }
+    #services{
+        margin-top: -50px;
+    }
+    #ContactServiceFooterTagName{
+        margin-left: 100px;
+    }
+    #ServiceFooter{
+        margin-left: 100px;
+    }
+    #copyRightTag{
+        font-size: 15px;
+        margin-left: 90px;
+    }
+
+
+    #englishLang{
+        display: none;
+    }
+    #sinhalaLang{
+        display: none;
     }
 }
 @media all and (max-width: 376px){
@@ -1272,3 +1339,4 @@
     margin-top: 60px;
     margin-left: 60px;
 }
+
