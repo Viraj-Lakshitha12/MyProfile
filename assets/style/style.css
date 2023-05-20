@@ -1048,6 +1048,7 @@
     #mainImage{
         width: 200px;
         margin-left: 40px;
+        background-image: url("/assets/images/my3.jpg");
     }
     #mainSectionAbout{
         margin-left: 40px;
