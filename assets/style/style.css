@@ -753,6 +753,9 @@
 .row > img {
     padding: 35px;
 }
+#NavIcon{
+    display: none;
+}
 @media all and (max-width: 1370px){
     #mainSectionAbout{
         margin-left: 10px;
@@ -771,6 +774,9 @@
     }
     #navigationBar{
         margin-right: 350px;
+    }
+    #NavIcon{
+        display: none;
     }
 
 }
@@ -792,6 +798,9 @@
     }
     #navigationBar{
         margin-right: 350px;
+    }
+    #NavIcon{
+        display: none;
     }
 
 }
@@ -817,9 +826,9 @@
     #animationServices > h4 > span {
         font-size: 10px;
     }
-    /*#navigationBar{*/
-    /*    margin-right: 350px;*/
-    /*}  */
+    #NavIcon{
+        display: none;
+    }
 }
 @media all and (max-width: 1210px){
     #mainSectionAbout{
@@ -849,6 +858,9 @@
     #searchBar{
         display: none;
     }
+    #NavIcon{
+        display: none;
+    }
 
 }
 
@@ -867,6 +879,9 @@
         margin-left: 480px;
     }
     #searchBar{
+        display: none;
+    }
+    #NavIcon{
         display: none;
     }
 }
@@ -904,6 +919,10 @@
     #searchBar{
         display: none;
     }
+    #NavIcon{
+        display: none;
+
+    }
 }
 
 @media all and (max-width: 998px){
@@ -936,28 +955,35 @@
     #animationServices > h4 > span {
         font-size: 10px;
     }
-    #navItems{
-        margin-left: 330px;
+    #navbarScroll{
+        margin-left: -100px;
     }
-    #searchBar{
+
+    /*#navigationBar{*/
+    /*   margin-left: 150px;*/
+    /*}*/
+    #NavIcon{
         display: none;
+
     }
 }
 @media all and (max-width: 860px) {
     #mainImage{
-        width: 320px;
+        width: 300px;
         margin-left: 180px;
+        margin-top: -10px;
     }
     #mainSectionAbout{
-       margin-top: 80px;
+       margin-top: 30px;
         margin-left: 200px;
     }
-    #navItems{
+  #navbarScroll{
+      margin-left:-100px ;
+  }
+    #NavIcon{
         display: none;
     }
-    #searchBar{
-        display: none;
-    }
+
 }
 @media all and (max-width: 768px) and (min-width: 660px){
     #mainSectionImage{
@@ -988,6 +1014,11 @@
     #mainSectionAbout > input{
         width:150px ;
         font-size: 20px;
+    }
+    #NavIcon{
+        display: block;
+        margin-left:20px;
+        margin-top: 10px;
     }
 }
 @media all and (max-width: 660px) {
@@ -1020,6 +1051,46 @@
     }
     #animationServices > span {
         font-size: 15px;
+    }
+    #aboutTagName{
+        margin-left: 85px;
+        font-size: 35px;
+    }
+    #HelloTag{
+        font-size: 21px;
+    }
+    #descriptionTag{
+        font-size: 12px;
+    }
+    #myName{
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+    #phoneDetails{
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: 0px;
+    }
+    #age{
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: 0px;
+    }
+    #fromDetails{
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+    #myEmail{
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+    #myDegree{
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: 20px;
     }
 }
 @media all and (max-width: 376px){
