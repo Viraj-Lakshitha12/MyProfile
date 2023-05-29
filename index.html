@@ -267,30 +267,28 @@
         </section><br><br>
 <!--       Assignment and  projects-->
         <section id="project_Assignment_section" >
-            <div class="btns">
-                <button class="shrink-border" id="btnAssignment">Assignment</button>
-                <button class="shrink-border" id="btnProjects">Projects</button>
-            </div>
-            
 <!--            project section -->
             <section id="projects" class="container-fluid">
                 <h1 id="projectNameTag">Projects</h1>
-
+                <div class="btns">
+                    <button class="shrink-border btnAssignment">Assignment</button>
+                    <button class="shrink-border btnProjects">Projects</button>
+                </div>
                 <section id="projectSection">
                     <div>
                         <img class="phoneSystemImg" src="assets/images/WhatsApp Image 2023-02-21 at 17.44.28.jpg">
-                        <br><strong>Phone Shop System</strong>
+                        <br><strong id="PhoneShopProjectName">Phone Shop System</strong>
                         <a  href="https://github.com/viraj-Lakhitha/1st_Semestert_Final">View Project ></a>
                     </div>
                     <div>
                         <img class="phoneSystemImg" src="assets/images/new1.jpg">
-                        <br><strong>Library System</strong>
+                        <br><strong id="LibrarySystemProjectName">Library System</strong>
                         <a href="https://github.com/viraj-Lakhitha?tab=repositories">View Project ></a>
                     </div>
                     <div>
                         <img class="phoneSystemImg" src="assets/images/Screenshot (45).png">
-                        <br><strong>View Project ></strong>
-                        <a href="https://github.com/viraj-Lakhitha/Hibernate_Project" >Hostel System ></a>
+                        <br><strong id="HostelSystemProjectName" >Hostel System </strong>
+                        <a href="https://github.com/viraj-Lakhitha/Hibernate_Project">View Project ></a>
                     </div>
                 </section>
 
@@ -300,17 +298,21 @@
  <!--        assignment section-->
             <section id="assignment" class="container-fluid">
                 <h1 id="AssignmentNameTag">Assignments</h1>
+                <div class="btns">
+                    <button class="shrink-border btnAssignment">Assignment</button>
+                    <button class="shrink-border btnProjects">Projects</button>
+                </div>
                 <div class="row" id="assignmentRow1">
-                    <div class="col"><img src="assets/images/Screenshot (46).png" width="300px" height="150px"> <span class="assignmentNames">My Profile </span> </div>
-                    <div class="col"><img src="assets/images/Screenshot (50).png" width="300px" height="150px"> <span class="assignmentNames">Responsive site </span></div>
-                    <div class="col"><img src="assets/images/Screenshot (51).png" width="300px" height="150px"> <span class="assignmentNames">Thogakade Pos </span></div>
-                    <div class="col"><img src="assets/images/Screenshot (52).png" width="300px" height="150px"> <span class="assignmentNames"> Css </span></div>
+                    <div class="col"> <img src="assets/images/Screenshot (46).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"> <span class="assignmentNames">My Profile </span> </a></div>
+                    <div class="col"> <img src="assets/images/Screenshot (50).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"> <span class="assignmentNames">Responsive site </span></a> </div>
+                    <div class="col"><img src="assets/images/Screenshot (51).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"> <span class="assignmentNames">Thogakade Pos </span></a></div>
+                    <div class="col"><img src="assets/images/Screenshot (52).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"><span class="assignmentNames"> Css </span></a></div>
                 </div><br><br><br>
                 <div class="row" id="assignmentRow2">
-                    <div class="col"><img src="assets/images/Screenshot (49).png" width="300px" height="150px"> <span class="assignmentNames">Car Animation </span></div>
-                    <div class="col"><img src="assets/images/Screenshot (48).png" width="300px" height="150px"> <span class="assignmentNames">Css Position </span></div>
-                    <div class="col"><img src="assets/images/Screenshot (47).png" width="300px" height="150px"> <span class="assignmentNames">Navigation Bar </span></div>
-                    <div class="col"><img src="assets/images/Screenshot (50).png" width="300px" height="150px"> <span class="assignmentNames">Responsive site  </span></div>
+                    <div class="col"><img src="assets/images/Screenshot (49).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"><span class="assignmentNames">Car Animation </span></a></div>
+                    <div class="col"><img src="assets/images/Screenshot (48).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"><span class="assignmentNames">Css Position </span></a></div>
+                    <div class="col"><img src="assets/images/Screenshot (47).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"> <span class="assignmentNames">Navigation Bar </span></a></div>
+                    <div class="col"><img src="assets/images/Screenshot (50).png" width="300px" height="150px"> <a href="https://github.com/viraj-Lakhitha?tab=repositories" target="_blank"><span class="assignmentNames">Responsive site  </span></a></div>
                 </div>
 
             </section>
@@ -493,11 +495,14 @@
 
     // project section
 
-       $("#btnAssignment").click(function () {
+       $("#projects").css('display','block');
+       $("#assignment").css('display','none');
+
+       $(".btnAssignment").click(function () {
             $("#projects").css('display','none');
            $("#assignment").css('display','block');
        });
-       $("#btnProjects").click(function () {
+       $(".btnProjects").click(function () {
            $("#assignment").css('display','none');
            $("#projects").css('display','block');
        });
