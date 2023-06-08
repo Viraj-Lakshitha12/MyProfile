@@ -18,12 +18,15 @@
     background-color: black;
     color: white;
 }
+
 #mainImage{
     border-radius: 100%;
     border-color: #0b5ed7;
     padding: 3px;
-    box-shadow: rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;    margin-top: 60px;
+    box-shadow: rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    margin-top: 60px;
     margin-left: 70px;
+    opacity: 0.9;
 }
 #mainSectionAbout{
     margin-top: 130px;
@@ -40,6 +43,7 @@
     font-size: 50px;
     font-weight: bolder;
     padding: 15px;
+    margin-top: -15px;
 }
 
 #nameTag{
@@ -1282,13 +1286,14 @@
     }
 }
 @media all and (max-width: 376px){
+    /*home section*/
     #mainImage{
-        width: 150px;
-        margin-left: -10px;
+        width: 250px;
+        margin-left: 140px;
     }
     #mainSectionAbout{
         margin-top: 50px;
-        margin-left: 20px;
+        margin-left: 150px;
     }
     #mainSectionAbout > p{
          font-size: 12px;
@@ -1311,6 +1316,23 @@
         margin-left: 110px;
         margin-top: -30px;
     }
+    /*about section*/
+
+    /*#aboutTagName{*/
+    /*    margin-left: 180px;*/
+    /*}*/
+    /*#HelloTag{*/
+    /*    margin-left: 100px;*/
+    /*}*/
+    /*#descriptionTag{*/
+    /*    margin-left: 100px;*/
+    /*    margin-right: 0;*/
+    /*}*/
+    /*#details{*/
+    /*    margin-left: 180px;*/
+    /*    font-size: 10px;*/
+    /*}*/
+
 }
 @media all and (max-width: 321px) {
     #mainImage {
@@ -1439,7 +1461,15 @@
 }
 
 /*Assignment Section styles*/
-
+/*#assignmentRow1 > span{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 3px;*/
+/*    background: linear-gradient(to right,transparent,#1779ff);*/
+/*    animation: animate1 2s linear infinite;*/
+/*}*/
 
 #assignmentRow1 > div {
     width: 300px;
@@ -1473,4 +1503,14 @@
 }
 .assignmentNames{
     margin-left: 100px;
+}
+
+
+@keyframes animate1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
 }
