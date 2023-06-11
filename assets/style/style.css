@@ -25,39 +25,43 @@
     padding: 3px;
     box-shadow: rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 85, 85) 0px 0px 0px 15px;
     margin-top: 60px;
-    margin-left: 70px;
+    margin-left: -270px;
     opacity: 0.9;
 }
 #mainSectionAbout{
-    margin-top: 130px;
+    margin-top: 150px;
+    margin-left: 15px;
 }
 #welcomeTag{
     font-family: 'Delicious Handrawn', cursive;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bolder;
 }
 
 #iAmTag{
     font-family: 'Delicious Handrawn', cursive;
-    font-size: 50px;
+    font-size: 32px;
     font-weight: bolder;
     padding: 15px;
     margin-top: -15px;
 }
 
 #nameTag{
-    font-family: 'Delicious Handrawn', cursive;
-    font-size: 70px;
+    font-size: 45px;
     margin-left: 50px;
     margin-top: -110px;
     padding: 5px;
     color: #bfff00;
 }
-#mainSection >div > h4{
-    margin-left: 180px;
-    margin-top: -46px;
+#homeReadMoreBtn{
+    margin-top: 15px;
 }
-#mainSection >div > h4 > span:before{
+#mainSectionAbout > h4{
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline;
+}
+#mainSectionAbout > h4 > span:before{
     content: " Web Developer";
     animation: animate infinite 3s ease-in-out;
     color: red;
@@ -73,6 +77,7 @@
 }
 #createTag{
     padding: 5px;
+    font-size: 30px;
 }
 /*about section styles*/
 
@@ -109,23 +114,12 @@
     padding: 10px;
 }
 
-/*.myDetails{
+.myDetails{
     font-size: 25px;
     margin-left: 50px;
 }
-#fromDetails{
-    margin-left: 550px;
-    margin-top: -55px;
-}
-#myEmail{
-    margin-left: 550px;
-    margin-top: -55px;
-}
-#myDegree{
-    margin-left: 550px;
-    margin-top: -55px;
-}*/
-.btnAbout>input{
+
+.btnAbout>div>input{
     background-color: #0FFB51;
     width: 150px;
     height: 50px;
@@ -133,12 +127,15 @@
     border-radius: 50px;
     font-weight: bolder;
     font-size: 25px;
-
+    margin-top: 30px;
 }
-#btnHireMe{
-    margin-left: 280px;
-
+.btnAbout>div>input:last-child{
+    margin-left: 50px;
 }
+.btnAbout>div>input:first-child{
+    margin-left: 300px;
+}
+
 #expTag{
     margin-top: 20px;
     padding: 30px;
@@ -932,3 +929,6 @@
         transform: translateX(100%);
     }
 }
+
+
+/*media query*/

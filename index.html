@@ -86,19 +86,28 @@
 <main >
     <!--        home-->
     <section class="row container-fluid homeNav" id="mainSection">
-        <!--            main Image-->
-        <div class="col animate__animated animate__bounce" data-aos="zoom-out"  id="mainSectionImage">
-            <img src="assets/images/my3.jpg" id="mainImage" width="450" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <!--            main Image-->
+                    <div class="animate__animated animate__bounce" data-aos="zoom-out"  id="mainSectionImage">
+                        <img src="assets/images/my3.jpg" id="mainImage" width="450" >
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div id="mainSectionAbout" data-aos="zoom-in-left">
+                        <p id="welcomeTag"><b> WELCOME TO MY WORLD</b></p>
+                        <h1 id="iAmTag">HI , I'AM<span id="nameTag">Viraj</span></h1>
+                        <h2 id="createTag">Web And App Developer</h2>
+                        <input type="button"  id="homeReadMoreBtn" value="Read More">
+                        <h4 id="animationServices">I'm  <span></span></h4>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col" id="mainSectionAbout" data-aos="zoom-in-left">
-            <p id="welcomeTag"><b> WELCOME TO MY WORLD</b></p>
-            <h1 id="iAmTag">HI , I'AM<span id="nameTag">Viraj</span></h1>
-            <h2 id="createTag">Creative Web And App Developer</h2>
-            <input type="button"  id="homeReadMoreBtn" value="Read More">
-            <h4 id="animationServices">I'm  <span></span></h4>
 
-        </div>
+
     </section>
     <!--    about-->
     <section id="about">
@@ -113,7 +122,7 @@
                 <p id="descriptionTag"> I am a web developer from Sri Lanka . i enjoy building everything from small business site to rich interactive web apps.if you are a business seeking a web presence or anemployerlooking to hire. you can get in touch with me here.I am highly focused software Engineer and developer in a variety of development and engineering positions. I have advanced skills in Desktop Application development
                     (java + MYSQL), Websites development, Wordpress,graphic designing and much more. Contact me to get your custom quote.</p>
             </div>
-            <div class="row">
+            <div class="row myDetails">
                 <div class="col-lg-6">
                     <p id="myName"><b>Name :</b>Viraj Lakshitha</p>
                     <p id="fromDetails"><b>From :</b>Sri Lanka </p>
@@ -126,12 +135,11 @@
                 </div>
             </div>
 
-<!--            <div class="myDetails small" id="details">-->
-
-<!--            </div>-->
-            <div class="btnAbout">
-                <input type="button" class="animate__shakeY" id="btnHireMe" value="Hire Me">
-                <input type="button" id="btnContact" value="Contact">
+            <div class="btnAbout row">
+                <div class="col-lg-12">
+                    <input type="button" class="animate__shakeY" id="btnHireMe" value="Hire Me">
+                    <input type="button" id="btnContact" value="Contact">
+                </div>
             </div>
             <div class="projectAndExpBtn">
                 <div id="expTag">
