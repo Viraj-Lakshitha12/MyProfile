@@ -137,20 +137,19 @@
 }
 
 #expTag{
-    margin-top: 20px;
+
     padding: 30px;
     border-radius: 30px;
     border: yellow 5px solid ;
     width: max-content;
-    margin-left: 110px;
+    margin-left: 160px;
 }
 #projectTag{
     border: yellow 5px solid ;
     width: max-content;
     border-radius: 30px;
     padding: 30px;
-    margin-left: 450px;
-    margin-top: -97px;
+    margin-left: 40px;
 
 }
 .projectAndExpBtn{
@@ -939,7 +938,7 @@
         width: 350px;
     }
     #mainSectionAbout{
-        margin-left: 80px;
+        margin-left: 120px;
         margin-top: 50px;
     }
     #mainSectionAbout > p {
@@ -963,5 +962,32 @@
     }
     #mainSectionAbout > h4 > span:before{
         font-size: 16px;
+    }
+
+    /*about section*/
+    #aboutTagName{
+        margin-left: 200px;
+    }
+    #HelloTag{
+        font-size: 25px;
+    }
+    #descriptionTag{
+        font-size: 14px;
+    }
+    .myDetails > div > p {
+        font-size: 19px;
+    }
+    #btnHireMe{
+        margin-left: -150px;
+    }
+    .btnAbout > div:last-child{
+        margin-left: 150px;
+    }
+    .btnAbout{
+        margin-left: 100px;
+    }
+    #projectTag{
+        margin-top: 35px;
+        margin-left: 163px;
     }
 }
