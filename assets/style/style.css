@@ -990,4 +990,11 @@
         margin-top: 35px;
         margin-left: 163px;
     }
+    /*service section*/
+    #serviceTag{
+        margin-left: 200px;
+    }
+    .myServices > div > div{
+        margin-left: 70px;
+    }
 }
