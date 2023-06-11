@@ -932,3 +932,36 @@
 
 
 /*media query*/
+@media (max-width: 576px) {
+    /*main section*/
+    #mainImage {
+        margin-left: 70px;
+        width: 350px;
+    }
+    #mainSectionAbout{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    #mainSectionAbout > p {
+       font-size: 20px;
+    }
+    #mainSectionAbout > h1 {
+        font-size: 20px;
+        margin-left: -11px;
+    }
+    #mainSectionAbout > h2 {
+        font-size: 20px;
+    }
+    #mainSectionAbout > h4 {
+        font-size: 20px;
+    }
+    #mainSectionAbout > input {
+        font-size: 20px;
+    }
+    #nameTag{
+        font-size: 30px;
+    }
+    #mainSectionAbout > h4 > span:before{
+        font-size: 16px;
+    }
+}
