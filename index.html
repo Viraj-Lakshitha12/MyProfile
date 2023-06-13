@@ -83,24 +83,50 @@
 </header>
 
 <!--    mainSection-->
-<main >
+<main class="main" >
     <!--        home-->
     <section class="row container-fluid homeNav" id="mainSection">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-5">
                     <!--            main Image-->
                     <div class="animate__animated animate__bounce" data-aos="zoom-out"  id="mainSectionImage">
-                        <img src="assets/images/my3.jpg" id="mainImage" width="450" >
+                        <img src="assets/images/my3.jpg" id="mainImage" width="400px" >
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div id="mainSectionAbout" data-aos="zoom-in-left">
-                        <p id="welcomeTag"><b> WELCOME TO MY WORLD</b></p>
+                        <h2 class="span loader"><span class="m">W</span><span class="m">E</span><span class="m">L</span><span class="m">C</span><span class="m">O</span><span class="m">M</span><span class="m">E</span><span class="m"> </span><span class="m">T</span><span class="m">O</span><span class="m"> </span><span class="m">M</span><span class="m">Y</span><span class="m"> </span><span class="m">W</span><span class="m">O</span><span class="m">R</span><span class="m">L</span><span class="m">D</span></h2>
+<!--                        <h3 id="welcomeTag"><b> WELCOME TO MY WORLD</b></h3>-->
                         <h1 id="iAmTag">HI , I'AM<span id="nameTag">Viraj</span></h1>
                         <h2 id="createTag">Web And App Developer</h2>
-                        <input type="button"  id="homeReadMoreBtn" value="Read More">
-                        <h4 id="animationServices">I'm  <span></span></h4>
+<!--                        <input type="button"  id="homeReadMoreBtn" value="Read More">-->
+<!--                     <h4 id="animationServices">I'm  <span></span></h4>-->
+
+                        <ul class="wrapper">
+                            <li class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </li>
+                            <li class="icon twitter">
+                                <span class="tooltip">Twitter</span>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </li>
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </li>
+                            <li class="icon github">
+                                <span class="tooltip">Github</span>
+                                <span><i class="fab fa-github"></i></span>
+                            </li>
+                            <li class="icon youtube">
+                                <span class="tooltip">Youtube</span>
+                                <span><i class="fab fa-youtube"></i></span>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -458,6 +484,19 @@
 <script src="../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
 
 <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     function openModal(image) {
         var modal = document.getElementById("myModal");
         var modalImage = document.getElementById("modalImage");
