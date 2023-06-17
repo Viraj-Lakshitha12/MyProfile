@@ -419,10 +419,8 @@ body {
 }
 
 .slideshow-title {
-    font-family: 'Allerta Stencil';
     font-size: 62px;
     color: #fff;
-    margin: 0 auto;
     text-align: center;
     margin-top: 25%;
     letter-spacing: 3px;
@@ -1040,17 +1038,6 @@ body {
     }
 }
 
-/*Assignment Section styles*/
-/*#assignmentRow1 > span{*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 3px;*/
-/*    background: linear-gradient(to right,transparent,#1779ff);*/
-/*    animation: animate1 2s linear infinite;*/
-/*}*/
-
 #assignmentRow1 > div {
     width: 300px;
     height: 150px;
@@ -1092,76 +1079,6 @@ body {
     }
     100%{
         transform: translateX(100%);
-    }
-}
-
-
-/*media query*/
-@media (max-width: 576px) {
-    /*main section*/
-    #mainImage {
-        margin-left: 70px;
-        width: 350px;
-    }
-    #mainSectionAbout{
-        margin-left: 120px;
-        margin-top: 50px;
-    }
-    #mainSectionAbout > p {
-       font-size: 20px;
-    }
-    #mainSectionAbout > h1 {
-        font-size: 20px;
-        margin-left: -11px;
-    }
-    #mainSectionAbout > h2 {
-        font-size: 20px;
-    }
-    #mainSectionAbout > h4 {
-        font-size: 20px;
-    }
-    #mainSectionAbout > input {
-        font-size: 20px;
-    }
-    #nameTag{
-        font-size: 30px;
-    }
-    #mainSectionAbout > h4 > span:before{
-        font-size: 16px;
-    }
-
-    /*about section*/
-    #aboutTagName{
-        margin-left: 200px;
-    }
-    #HelloTag{
-        font-size: 25px;
-    }
-    #descriptionTag{
-        font-size: 14px;
-    }
-    .myDetails > div > p {
-        font-size: 19px;
-    }
-    #btnHireMe{
-        margin-left: -150px;
-    }
-    .btnAbout > div:last-child{
-        margin-left: 150px;
-    }
-    .btnAbout{
-        margin-left: 100px;
-    }
-    #projectTag{
-        margin-top: 35px;
-        margin-left: 163px;
-    }
-    /*service section*/
-    #serviceTag{
-        margin-left: 200px;
-    }
-    .myServices > div > div{
-        margin-left: 70px;
     }
 }
 
@@ -1431,6 +1348,106 @@ p {
     cursor: default !important;
 }
 
+
+
+
+
+/*media query*/
+
+@media (max-width: 576px) {
+    /*navigation bar*/
+    #navigationBar{
+        display: none;
+    }
+    /*main section*/
+    #mainImage {
+        margin-left: 70px;
+        width: 350px;
+    }
+    #mainSectionAbout{
+        margin-left: 120px;
+        margin-top: 50px;
+    }
+    #mainSectionAbout > p {
+       font-size: 20px;
+    }
+    #mainSectionAbout > h1 {
+        font-size: 20px;
+        margin-left: -11px;
+    }
+    #mainSectionAbout > h2 {
+        font-size: 20px;
+    }
+    #mainSectionAbout > h4 {
+        font-size: 20px;
+    }
+    #mainSectionAbout > input {
+        font-size: 20px;
+    }
+    #nameTag{
+        font-size: 30px;
+    }
+    #mainSectionAbout > h4 > span:before{
+        font-size: 16px;
+    }
+
+    /*about section*/
+    #aboutTagName{
+        margin-left: 200px;
+    }
+    #HelloTag{
+        font-size: 25px;
+    }
+    #descriptionTag{
+        font-size: 14px;
+    }
+    .myDetails > div > p {
+        font-size: 19px;
+    }
+    #btnHireMe{
+        margin-left: -150px;
+    }
+    .btnAbout > div:last-child{
+        margin-left: 150px;
+    }
+    .btnAbout{
+        margin-left: 100px;
+    }
+    #projectTag{
+        margin-top: 35px;
+        margin-left: 163px;
+    }
+
+    /*service section*/
+    #serviceTag{
+        margin-left: 200px;
+    }
+    .myServices > div > div{
+        margin-left: 70px;
+    }
+
+    /*image section*/
+    #firstImageSection , #secondImageSection{
+        width: 500px;
+        margin-left:25px;
+    }
+
+    /*project section*/
+    /*.text-justify{*/
+    /*    font-size: 11px;*/
+    /*    margin-left: -160px;*/
+    /*}*/
+    /*.text-center{*/
+    /*    margin-left: -100px;*/
+    /*}*/
+    /*.text-center>div{*/
+    /*    font-size: 10px;*/
+    /*}*/
+    /*#head-project{*/
+    /*    margin-left: -160px;*/
+    /*}*/
+
+}
 
 
 
