@@ -1,0 +1,47 @@
+
+h2{
+    color: green;
+}
+
+/*#first_h1{*/
+/*    color:greenyellow;*/
+/*}*/
+
+/*.paragraph{*/
+/*    color: blue;*/
+/*}*/
+/**{*/
+/*    color: greenyellow;*/
+/*}*/
+
+/*Attribute selectors*/
+/*[id]{*/
+/*    color: brown;*/
+/*}*/
+
+/*Attribute selectors with starting value*/
+/*[href ^="https"]{*/
+/*    color: orange;*/
+/*}*/
+
+/*!*Attribute selectors with End value*!*/
+/*[href $=".com"]{*/
+/*    color: purple;*/
+/*}*/
+
+/*Attribute selectors with given value*/
+/*[href *="guide"]{*/
+/*    color: purple;*/
+/*}*/
+
+/*Attribute selectors with given Word*/
+/*[href ~="verify"]{*/
+/*    color: purple;*/
+/*}*/
+
+
+
+/*!*Attribute selectors with type selector*!*/
+/*h1[class="paragraph"]{*/
+/*    color: purple;*/
+/*}*/

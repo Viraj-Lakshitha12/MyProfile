@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11_position_case_01</title>
+
+    <style>
+        main{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+      main>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+      main>section:nth-child(1){
+          background-color: red;
+          top: 0;
+          left: 0;
+      }
+      main>section:nth-child(2){
+          background-color: green;
+          top: 0;
+          right: 0;
+      }
+      main>section:nth-child(3){
+          background-color: orange;
+          bottom: 0;
+          left: 0;
+      }
+      main>section:nth-child(4){
+          background-color: deeppink;
+          bottom: 0;
+          right:0;
+      }
+      main>.coner{
+         width: 200px;
+          height: 200px;
+          position: absolute;
+          background-color: white;
+      }
+      #coner-01{
+          top: 0;
+          left: 0;
+          border-bottom-right-radius: 100%;
+      }
+      #coner-02{
+          top: 0;
+          right: 0;
+          border-bottom-left-radius:100% ;
+      }
+      #coner-03{
+          bottom: 0;
+          left: 0;
+          border-top-right-radius: 100%;
+      }
+      #coner-04{
+          bottom: 0;
+          right: 0;
+          border-top-left-radius:100% ;
+      }
+      main>.mid-border{
+          width: 200px;
+          height: 100px;
+          background-color: white;
+          position: absolute;
+      }
+      #min-top{
+          right: 0;
+          left: 0;
+          margin: auto;
+          border-radius: 0 0 12rem 12rem;
+
+      }
+      #min-bottom{
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          border-radius: 12rem 12rem 0 0;
+      }
+      #mid{
+          width: 150px;
+          height: 150px;
+          background-color: white;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+      }
+      #mid>div {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: absolute;
+          border-radius: 100%;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+      }
+      main>section>div{
+          width: 150px;
+          height: 150px;
+          background-color: white;
+          border-radius: 100%;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+      }
+        main>section>div>div{
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <div id="coner-01" class="coner"></div>
+    <div id="coner-02" class="coner"></div>
+    <div id="coner-03" class="coner"></div>
+    <div id="coner-04" class="coner"></div>
+
+    <div id="min-top" class="mid-border" ></div>
+    <div id="min-bottom" class="mid-border" ></div>
+
+    <div id="mid">
+        <div></div>
+    </div>
+</main>
+</body>
+</html>

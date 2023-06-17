@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thogakade Pos System</title>
+    <meta name="viewport" content="width=device-width initial scale=1">
+    <link rel="stylesheet" href="assets/bootstarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/basics.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+</head>
+<body>
+
+<!--navigation-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark i" >
+    <div class="container-fluid">
+        <a class="navbar-brand" id="thogakadeName" href="#">ThogaKade POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="order">Orders</a>
+                </li>
+
+                <li class="nav-item " >
+                    <a class="nav-link" id="item" href="#" >Item</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link " id="customer" href="#">Customer</a>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+        </div>
+    </div>
+</nav>
+
+<!--customer-->
+<section class="container-fluid" id="manageCustomer">
+    <div class="row" >
+        <div class="col" id="customerGrid01">
+            <h2 style="background-color:blue"> <i class="fa-solid fa-person-military-pointing" style="background-color:blue"></i>CUSTOMER</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" ><br>
+            <form class="form input-group-lg">
+                <div class="mb-3">
+                    <label for="txtSearchCustomer" class="form-label">Search :</label>
+                    <input type="text" class="form-control" id="txtSearchCustomer" placeholder="Input Name / NIC / Tp Here">
+                </div>
+                <div>
+                    <label for="selectName" class="form-label">Name :</label>
+                    <select class="form-select" aria-label="Default select example" id="selectName">
+                        <option selected>Open this select Name</option>
+                        <option value="1">Customer 01</option>
+                        <option value="1">Customer 02</option>
+                        <option value="1">Customer 03</option>
+                    </select>
+                </div><br>
+                <button type="submit" class="btn btn-primary" id="searchCustomer">SEARCH</button>
+            </form>
+        </div>
+
+        <div class="col" ><br>
+            <div class="row">
+                <form class="row input-group-sm" id="customerForm">
+                    <div class="col-md-4">
+                        <label for="customerID" class="form-label">Customer ID :</label>
+                        <input type="text" class="form-control" id="customerID" placeholder="C001">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="customerName" class="form-label">Customer Name :</label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Full Name">
+                    </div>
+
+                    <div class="col-3">
+                        <label for="customerAge" class="form-label">Age :</label>
+                        <input type="text" class="form-control" id="customerAge" placeholder="20">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="customerSalary" class="form-label">Salary :</label>
+                        <input type="text" class="form-control" id="customerSalary" placeholder="12345.00">
+                    </div>
+
+                    <div class="col-8">
+                        <label for="CustomerAddress" class="form-label">Address :</label>
+                        <input type="text" class="form-control" id="CustomerAddress" placeholder="1234 Main St">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="row" >
+                <div id="btnCrud">
+
+                    <button type="button" class="btn btn-outline-warning" id="btnSaveCustomer" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa-solid fa-plus"></i>   SAVE</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>   UPDATE</button>
+                    <button type="button" class="btn btn-outline-success"><i class="fa-regular fa-circle-check"></i>   Reset</button>
+                    <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i>   DELETE</button>
+                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrows-rotate"></i>   REFRESH</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+        <div class="col"><br><br>
+            <table class="table table-dark table-hover " style="border: 2px solid white">
+                <thead>
+                <tr>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">TP</th>
+                </tr>
+                </thead>
+                <tbody id="customerTable">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<!--item-->
+<section class="container-fluid" id="manageItem">
+
+    <div class="row" >
+        <div class="col" id="ItemGrid01">
+            <h2 style="background-color:blue"> <i class="fa-solid fa-shop" style="background-color: blue"></i>  ITEM</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" ><br>
+            <form class="form input-group-lg">
+                <div class="mb-3">
+                    <label for="inputSearchItem" class="form-label">Search :</label>
+                    <input type="text" class="form-control" id="inputSearchItem" placeholder="Input Item Name / Code Here">
+                </div>
+                <div>
+                    <label for="selectItemName" class="form-label">Name :</label>
+                    <select class="form-select" aria-label="Default select example" id="selectItemName">
+                        <option selected>Open this select Item Name</option>
+                        <option value="1">Customer 01</option>
+                        <option value="1">Customer 02</option>
+                        <option value="1">Customer 03</option>
+                    </select>
+                </div><br>
+                <button type="submit" class="btn btn-primary" id="btnSearchItem">SEARCH</button>
+            </form>
+        </div>
+
+        <div class="col"><br>
+            <div class="row">
+                <form class="row input-group-sm" id="itemForm">
+                    <div class="col-md-4">
+                        <label for="itemID" class="form-label">Item ID :</label>
+                        <input type="text" class="form-control" id="itemID" placeholder="C001">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="itemName" class="form-label">Item Name :</label>
+                        <input type="text" class="form-control" id="itemName" placeholder="Full Name">
+                    </div>
+
+                    <div class="col-3">
+                        <label for="itemQty" class="form-label">Qty :</label>
+                        <input type="text" class="form-control" id="itemQty" placeholder="20">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="itemUnitPrice" class="form-label">Unit Price :</label>
+                        <input type="text" class="form-control" id="itemUnitPrice" placeholder="12345.00">
+                    </div>
+                    
+                </form>
+
+            </div>
+            <div class="row">
+                <div id="btnItemCrud">
+                    <button type="button" id="saveItemBtn" class="btn btn-outline-warning"><i class="fa-solid fa-plus" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"></i>   SAVE</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>   UPDATE</button>
+                    <button type="button" class="btn btn-outline-success"><i class="fa-regular fa-circle-check"></i>   CLEAR</button>
+                    <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i>   DELETE</button>
+                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrows-rotate"></i>   REFRESH</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col"><br><br>
+            <table class="table table-dark table-hover "  style="border: 2px solid white">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">QTY</th>
+                    <th scope="col">price</th>
+                </tr>
+                </thead>
+                <tbody id="itemTable" >
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<!--order-->
+<section class="container-fluid" id="manageOrder">
+
+    <div class="row " id="grid" >
+        <div class="col-md-12" style="margin: 10px" id="firstRow">
+            <div class="row" style="background-color: #0003ff"><h3 id="grid03Top">Invoice Details</h3></div>
+            <div class="row">
+                <form class="row input-group-sm" style="font-size: x-small">
+                    <div class="col-md-4">
+                        <label for="inputOrderId" class="form-label">Order ID :</label>
+                        <input type="text" class="form-control" id="inputOrderId" placeholder="O001">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputCustomer" class="form-label">Customer :</label>
+                        <select id="inputCustomer" class="form-select" >
+                            <option selected>Choose-1</option>
+                            <option>Choose-2</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="id" class="form-label">Customer ID :</label>
+                        <input type="text" class="form-control" id="id" placeholder="C001">
+                    </div>
+
+                    <div class="col-3">
+                        <label for="inputDate" class="form-label">Date :</label>
+                        <input type="date" class="form-control" id="inputDate">
+                    </div>
+
+                    <div class="col-5">
+                        <label for="inputName" class="form-label">Name :</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="salary" class="form-label">Salary :</label>
+                        <input type="text" class="form-control" id="salary" placeholder="12345.00">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-6" id="secondRow">
+            <div class="row" id="grid02Top"><h3>Item Select</h3></div>
+            <div class="row">
+                <form class="row input-group-sm" style="font-size: x-small">
+                    <div class="col-md-5">
+                        <label for="inputItem" class="form-label">Item :</label>
+                        <select id="inputItem" class="form-select">
+                            <option selected>Item 01</option>
+                            <option selected>Item 02</option>
+                            <option selected>Item 03</option>
+                        </select>
+                    </div>
+                    <div class="col-md-7">
+                        <label for="inputItemCode" class="form-label">Item Code :</label>
+                        <input type="text" class="form-control" id="inputItemCode" placeholder="P001">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputItemName" class="form-label">Item Name :</label>
+                        <input type="text" class="form-control" id="inputItemName" placeholder="Keerisamba 5kg">
+                    </div>
+                    <div class="col-3">
+                        <label for="inputPrice" class="form-label">Price :</label>
+                        <input type="text" class="form-control" id="inputPrice" placeholder="1234.00">
+                    </div>
+                    <div class="col-3">
+                        <label for="inputQty" class="form-label">QTY ON HAND :</label>
+                        <input type="text" class="form-control" id="inputQty" placeholder="120">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputOrderQty" class="form-label">Order QTY :</label>
+                        <input type="text" class="form-control" id="inputOrderQty" placeholder="3">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6" id="thrdRow" >
+            <div class="row" id="grid04Top"><h3 >Payment</h3></div>
+            <div class="row">
+                <form class="row input-group-sm " style="font-size: x-small">
+                    <div class="col-md-6">
+                        <label for="inputCash" class="form-label">Cash :</label>
+                        <input type="text" class="form-control" id="inputCash" placeholder="5000">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputDiscount" class="form-label">Discount :</label>
+                        <input type="text" class="form-control" id="inputDiscount" placeholder="10%">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputBalance" class="form-label">Balance :</label>
+                        <input type="text" class="form-control" id="inputBalance" placeholder="4055">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-outline-warning" id="btnPurchase">Purchase</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col">
+            <table class="table table-dark table-hover table-sm" style="border: 2px solid white">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">P002</th>
+                    <td>Keerisamba 5KG</td>
+                    <td>525.00</td>
+                    <td>2</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">P002</th>
+                    <td>Keerisamba 5KG</td>
+                    <td>525.00</td>
+                    <td>2</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">P002</th>
+                    <td>Keerisamba 5KG</td>
+                    <td>525.00</td>
+                    <td>2</td>
+                    <td>1000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<script src="assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+<script src="db/DB.js"></script>
+
+<script type="module" src="controller/CustomerController.js"></script>
+<script type="module" src="model/Customer.js"></script>
+
+<script type="module" src="controller/ItemController.js"></script>
+<script type="module" src="model/Item.js"></script>
+
+<script>
+ // Customer Section
+
+    // save customer
+    // $("#btnSaveCustomer").click(function () {
+    //     let customerId = $("#customerID").val();
+    //     let customerName = $("#customerID").val();
+    //     let customerAge = $("#customerAge").val();
+    //     let customerSalary = $("#customerSalary").val();
+    //     let customerTP = $("#customerTP").val();
+    //
+    //     var customerObject = {
+    //         id:customerId,
+    //         name:customerName,
+    //         age:customerAge,
+    //         salary:customerSalary,
+    //         tp:customerTP
+    //     }
+    //     customerDB.push(customerObject);
+    //
+    //     function loadALlCustomers() {
+    //         $("#customerTable").empty();
+    //         for (var i in customerDB){
+    //             var row =`<tr><td>${customerDB[i].id}</td><td>${customerDB[i].name}</td><td>${customerDB[i].age}</td><td>${customerDB[i].salary}</td><td>${customerDB[i].tp}</td></tr>`
+    //             $("#customerTable").append(row);
+    //         }
+    //     }
+    //     loadALlCustomers();
+    // });
+
+    // search customer
+   // $("#searchCustomer").click(function () {
+   //      let customerId = $("#txtSearchCustomer").val();
+   //      let searchCustomers1 = searchCustomers(customerId);
+   //      if (searchCustomers1){
+   //         $("#customerID").val(customerDB[searchCustomers1].id);
+   //         $("#customerName").val(customerDB[searchCustomers1].name);
+   //         $("#customerAge").val(customerDB[searchCustomers1].age);
+   //         $("#customerSalary").val(customerDB[searchCustomers1].salary);
+   //         $("#customerTP").val(customerDB[searchCustomers1].tp);
+   //      }else{
+   //          alert("Not Found Customer");
+   //      }
+   // });
+   //
+   //  function searchCustomers(customerId) {
+   //      for (let i = 0 ; i< customerDB.length+1 ; i++){
+   //          if (customerDB[i].id==customerId){
+   //              return i;
+   //          }
+   //      }
+   //  }
+
+
+
+    // item Section
+    //  $("#saveItemBtn").click(function () {
+    //      let ItemId = $("#itemID").val();
+    //      let ItemName = $("#itemName").val();
+    //      let ItemQty = $("#itemQty").val();
+    //      let ItemPrice = $("#itemUnitPrice").val();
+    //
+    //      var itemObject = {
+    //          id :ItemId,
+    //          name:ItemName,
+    //          qty:ItemQty,
+    //          price:ItemPrice
+    //      };
+    //      ItemDB.push(itemObject);
+    //
+    //      function loadAllItems() {
+    //          $("#itemTable").empty();
+    //          for(var i in ItemDB){
+    //              var row = `<tr><td>${ItemDB[i].id}</td><td>${ItemDB[i].name}</td><td>${ItemDB[i].qty}</td><td>${ItemDB[i].price}</td></tr>`;
+    //              $("#itemTable").append(row);
+    //          }
+    //
+    //      }
+    //      loadAllItems();
+
+
+         // var row = `<tr><td>${id}</td><td>${name}</td><td>${Qty}</td><td>${price}</td></tr>`;
+         // $("#itemTable").append(row);
+    //
+    //
+    // // click funtion
+    //      $("#itemTable>tr").click(function () {
+    //          let itemId = $(this).children().eq(0).text();
+    //          let itemName = $(this).children().eq(1).text();
+    //          let itemQty= $(this).children().eq(2).text();
+    //          let itemUnitPrice= $(this).children().eq(3).text();
+    //
+    //         $("#itemID").val(itemId);
+    //          $("#itemName").val(itemName);
+    //          $("#itemQty").val(itemQty);
+    //         $("#itemUnitPrice").val(itemUnitPrice);
+    //      })
+    //
+    //
+    //      $("#itemTable>tr").dblclick(function () {
+    //          $(this).remove();
+    //      })
+    //  });
+    //
+    // var regEx = /^[0-9]{3}$/
+    //   $("#itemID").on('keyup',function (event) {
+    //       let id = $("#itemID").val();
+    //
+    //       if (regEx.test(id)){
+    //           $("#itemID").css('border','5px solid green');
+    //               if (event.key.equals("Enter")){
+    //                   $("#itemName").focus();
+    //               }
+    //       }else{
+    //           $("#itemID").css('border','5px solid red');
+    //       }
+    //   });
+
+
+     // $("#btnSearchItem").click(function () {
+     //     let itemCode = $("#inputSearchItem").val();
+     //     let searchItem1 = searchItem(itemCode);
+     //         if (searchItem1){
+     //             $("#itemID").val(ItemDB.id);
+     //             $("#itemName").val(ItemDB.name);
+     //             $("#itemQty").val(ItemDB.qty);
+     //             $("#itemUnitPrice").val(ItemDB.price);
+     //         }else{
+     //             alert("noo");
+     //         }
+     //
+     //
+     // });
+     //
+     // function searchItem(itemCode) {
+     //     for (let i = 0 ; i < ItemDB.length ; i++ ){
+     //         if(ItemDB[i].id==itemCode){
+     //             return ItemDB[i];
+     //         }
+     //     }
+     // }
+     // let text = $("#thogakadeName").text();
+     // var position = 0;
+     // function animationText() {
+     //    let s = text.substr(0,position);
+     //     $("#thogakadeName").text(s);
+     //    position++;
+     //    if (s==text.length){
+     //        position=0;
+     //    }
+     // }
+    //setInterval(animationText,100);
+
+    $("#manageCustomer").css('display','none');
+    $("#manageItem").css('display','none');
+    $("#manageOrder").css('display','block');
+
+   $("#order").click(function (){
+       $("#manageCustomer").css('display','none');
+       $("#manageItem").css('display','none');
+       $("#manageOrder").css('display','block');
+   });
+    $("#item").click(function (){
+        $("#manageCustomer").css('display','none');
+        $("#manageItem").css('display','block');
+        $("#manageOrder").css('display','none');
+    });
+    $("#customer").click(function (){
+        $("#manageCustomer").css('display','block');
+        $("#manageItem").css('display','none');
+        $("#manageOrder").css('display','none');
+    });
+
+</script>
+
+</body>
+</html>

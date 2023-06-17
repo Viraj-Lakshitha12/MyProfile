@@ -1,0 +1,134 @@
+*{
+    background-color: black;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-right: 50px;
+}
+.dropdown-menu{
+    font-weight: bolder;
+}
+
+#invoiceTag{
+    font-weight: bolder;
+    border: 2px solid red;
+}
+
+#grid{
+    background-color: rgba(124, 118, 118, 0.2);
+}
+
+
+
+#grid02Top{
+    width: 47vw;
+    border-radius: 5px;
+    margin-left: 180px;
+}
+#grid03Top{
+    margin-left: 600px;
+    width: max-content;
+    background-color: #0003ff;
+
+}
+
+#firstRow{
+    width: 98vw;
+    height:240px;
+    border-radius:20px;
+    color: white;
+    margin-left: 20px;
+}
+
+#secondRow{
+    width: 47vw;
+    height:240px ;
+    border-radius:20px;
+    color: white;
+    margin-left: 10px;
+}
+
+#thrdRow{
+    width: 50vw;
+    height:240px ;
+    border-radius:20px;
+    position: relative;
+    margin-left: 15px;
+    color: white;
+}
+
+
+#grid04Top{
+    background-color: #070000;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+#btnPurchase{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.dropdown-menu{
+    background-color: blue;
+}
+
+.dropdown-item:hover{
+    color: black;
+}
+
+#customerGrid01{
+    width: 100vw;
+    height: 7vh;
+    background-color: blue;
+    border-radius: 6px;
+    color: white;
+}
+
+.form{
+    color: white;
+}
+.form:focus {
+    border-color: #4d90fe;
+    box-shadow: none;
+}
+
+.form-select:hover{
+  color: #0028ee;
+}
+
+#btnCrud{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:50px;
+}
+#btnItemCrud{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:50px;
+}
+
+#btnSearch{
+    margin-left: 300px;
+}
+
+#ItemGrid01{
+    width: 100vw;
+    height: 7vh;
+    background-color: blue;
+    border-radius: 6px;
+    color: white;
+}
+.saveModel{
+    color: white;
+}
+#customerForm{
+    color: white;
+}
+#itemForm{
+    color: white;
+}

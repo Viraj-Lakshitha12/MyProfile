@@ -1381,8 +1381,55 @@ p {
     transition: 0.3s;
 }
 
+/*Assignment section*/
 
 
+.ui-projects img {
+    height: 13.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ui-projects .ui-div {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+.ui-projects .ui-div:hover img {
+    -webkit-filter: brightness(30%);
+    filter: brightness(30%);
+    transition: all 0.3s ease;
+    transform: scale(1.06);
+}
+
+.ui-div {
+    position: relative;
+    height: 16.5rem;
+    width: 24rem;
+}
+
+.ui-div .card-text2 {
+    position: absolute;
+    color: #ebebeb;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.ui-div:hover .card-text2 {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s !important;
+}
+
+.owl-carousel img {
+    cursor: default !important;
+}
 
 
 

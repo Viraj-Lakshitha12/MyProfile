@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight Rider Theme</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: black;
+        }
+        .grid{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+        .square{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            display: inline-block;
+
+        }
+
+        #btn-panel{
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .btn{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+<section class="grid">
+    <div class="square" id="d1"></div>
+    <div class="square" id="d2"></div>
+    <div class="square" id="d3"></div>
+    <div class="square" id="d4"></div>
+    <div class="square" id="d5"></div>
+    <div class="square" id="d6"></div>
+    <div class="square" id="d7"></div>
+
+</section>
+<section id="btn-panel">
+    <button class="btn" id="btnStart">Start</button>
+    <button class="btn" id="btnStop">Stop</button>
+</section>
+
+<audio id="controlAudio" src="assets/audio/Knight Rider Sms ! Knight Rider ! Theme.mp3"></audio>
+
+<script src="assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+<script>
+
+    var light = $(".square");
+    var lightNumber = 0;
+    var derection = 'RIGHT';
+    var intervalId = null;
+
+    function timers() {
+        $(".square").css('background','white');
+        light[lightNumber].style.background = 'red';
+        if (lightNumber > 0 ){
+            light[lightNumber-1].style.background = 'pink';
+        }
+        if (lightNumber < 6){
+            light[lightNumber+1].style.background = 'pink';
+        }
+
+        if (lightNumber===0){
+            derection='RIGHT';
+        }
+        if (lightNumber===6){
+            derection='LEFT';
+        }
+        if (derection ==='RIGHT'){
+            lightNumber++;
+        }else{
+            lightNumber--;
+        }
+
+    }
+    //setInterval(timers,100);
+
+    $("#btnStart").on("click",() =>{
+        clearInterval(intervalId);
+        $("#controlAudio")[0].play();
+        intervalId =setInterval(timers,100);
+    });
+
+    $("#btnStop").on("click",() =>{
+        $("#controlAudio")[0].pause();
+        clearInterval(intervalId);
+    });
+</script>
+</body>
+</html>
