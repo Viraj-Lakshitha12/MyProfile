@@ -1,3 +1,4 @@
+
 #nameLabel{
     font-size: 30px;
     font-weight: bolder;
@@ -333,11 +334,6 @@ body {
     font-size: 25px;
 }
 
-/*#setImg{*/
-/*    background-image: url("../images/man-with-glowing-light-shine-innovation-concept-mixed-media_641298-15623.jpg");*/
-/*    z-index: 100;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
 
 #serviceTag{
     margin-left: 43vw;
@@ -365,7 +361,7 @@ body {
 
 .myServices>div>div{
     width: 400px;
-    height: 200px;
+    height: 250px;
     margin: 10px;
     background-color: #D9D9D9;
     border-radius: 20px;
@@ -378,7 +374,7 @@ body {
     padding: 15px;
     margin-left: 10px;
     width: 380px;
-    height: 150px;
+    height: 195px;
     background-color: black;
     color: white;
 }
@@ -1384,4 +1380,11 @@ p {
     color: #ebebeb;
     transition: 0.3s;
 }
+
+
+
+
+
+
+
 
