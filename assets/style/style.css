@@ -1467,5 +1467,26 @@ p {
 }
 
 
+@media (max-width: 992px) and (min-width: 768px){
+    .navbarScroll{
+        margin-left: 120px;
+    }
+    #mainSectionAbout >#iAmTag , #nameTag ,#createTag ,  h2 , h1 , span{
+        font-size: 130%;
+    }
+    #mainImage{
+        width: 380px;
+        margin-left: 35px;
+    }
+    #mainSectionAbout{
+        margin-left: 130px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px){
+    .navbarScroll{
+        margin-left: 20px;
+    }
+}
 
 
