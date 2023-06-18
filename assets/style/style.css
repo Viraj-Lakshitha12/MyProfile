@@ -1362,7 +1362,7 @@ p {
     /*main section*/
     #mainImage {
         margin-left: 70px;
-        width: 350px;
+        width: 280px;
     }
     #mainSectionAbout{
         margin-left: 120px;
@@ -1389,6 +1389,9 @@ p {
     }
     #mainSectionAbout > h4 > span:before{
         font-size: 16px;
+    }
+    .wrapper{
+       margin-left: -90px;
     }
 
     /*about section*/
@@ -1446,6 +1449,20 @@ p {
     /*#head-project{*/
     /*    margin-left: -160px;*/
     /*}*/
+}
+
+@media (max-width: 768px) and (min-width: 576px){
+    #navigationBar{
+        display: none;
+    }
+    #mainImage{
+        width: 350px;
+        margin-left:150px;
+    }
+    #mainSectionAbout{
+        margin-left: 160px;
+        margin-top: 50px;
+    }
 
 }
 
