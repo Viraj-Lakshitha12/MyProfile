@@ -526,54 +526,6 @@ body {
       }
 }
 
-#languageExpertise{
-    margin-top: -300px;
-}
-
-#englishLang{
-    width: 300px;
-    height: 18px;
-}
-.languageDetails{
-    width: 400px;
-    height: 18px;
-    border:5px solid red;
-    animation-name: colorAnimation;
-    animation-duration: 5s;
-    animation-direction: initial;
-}
-#sinhalaLang{
-    margin-left: 1000px;
-    margin-top: -60px;
-}
-#englishLang{
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-
-@keyframes colorAnimation {
-    0% {
-
-    }
-    20% {
-        width:100px;
-        background-color: yellow;
-    }
-    40% {
-        width:150px;
-        background-color: yellow;
-    }
-    60% {
-        width:200px;
-        background-color: yellow;
-    }
-    100% {
-        width:350px;
-        background-color: yellow;
-    }
-}
-
 #contactTag{
     margin-left: 44vw;
     margin-bottom: 50px;
@@ -1361,7 +1313,7 @@ p {
     }
     /*main section*/
     #mainImage {
-        margin-left: 70px;
+        margin-left: 100px;
         width: 280px;
     }
     #mainSectionAbout{
@@ -1396,16 +1348,23 @@ p {
 
     /*about section*/
     #aboutTagName{
-        margin-left: 200px;
+        margin-left: 170px;
+        font-size: 180%;
     }
     #HelloTag{
-        font-size: 25px;
+        font-size: 130%;
+        margin-left: 20px;
     }
     #descriptionTag{
-        font-size: 14px;
+        margin-left:20px;
+        margin-top:-20px;
+        font-size: 10px;
+        width: 530px;
+        padding: 15px;
     }
     .myDetails > div > p {
-        font-size: 19px;
+        font-size: 60%;
+        margin-left: 80px;
     }
     #btnHireMe{
         margin-left: -150px;
@@ -1418,7 +1377,10 @@ p {
     }
     #projectTag{
         margin-top: 35px;
-        margin-left: 163px;
+        margin-left: 143px;
+    }
+    #expTag{
+        margin-left: 140px;
     }
 
     /*service section*/
@@ -1435,26 +1397,13 @@ p {
         margin-left:25px;
     }
 
-    /*project section*/
-    /*.text-justify{*/
-    /*    font-size: 11px;*/
-    /*    margin-left: -160px;*/
-    /*}*/
-    /*.text-center{*/
-    /*    margin-left: -100px;*/
-    /*}*/
-    /*.text-center>div{*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*#head-project{*/
-    /*    margin-left: -160px;*/
-    /*}*/
 }
 
 @media (max-width: 768px) and (min-width: 576px){
     #navigationBar{
         display: none;
     }
+    /*main section*/
     #mainImage{
         width: 350px;
         margin-left:150px;
@@ -1463,6 +1412,54 @@ p {
         margin-left: 160px;
         margin-top: 50px;
     }
+    /*about section*/
+    #aboutTagName{
+        margin-left: 160px;
+        font-size: 220%;
+    }
+    #HelloTag{
+        font-size: 100%;
+    }
+    #descriptionTag-And-Hello-Tag{
+        margin-left: -70px;
+    }
+    #descriptionTag{
+        font-size: 13px;
+        width: 1000px;
+    }
+    #btnContact{
+        margin-top: -500px;
+    }
+    #btnHireMe{
+        /*margin-top: -50px;*/
+    }
+    #expTag{
+        margin-left: 60px;
+    }
+    #projectTag{
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    /*service section*/
+
+    #serviceTag{
+        margin-left: 40vw;
+    }
+    .myServices > div > div{
+        margin-left: 170px;
+    }
+
+    /*gallery section*/
+    .GalleryTag{
+        margin-left: 40vw;
+        margin-top: -60px;
+    }
+
+    /*skills section*/
+    #expertiseTag{
+        margin-left: 32vw;
+    }
+
 
 }
 
