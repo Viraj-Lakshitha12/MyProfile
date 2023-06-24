@@ -1373,12 +1373,6 @@ p {
         margin-left: 70px;
     }
 
-    /*project section*/
-    .text-center{
-        margin-left: -100px;
-    }
-
-
     /*image section*/
     #firstImageSection , #secondImageSection{
         width: 500px;
@@ -1406,10 +1400,10 @@ p {
     }
     #mapSection{
         display: block;
-        margin: 50px 0 0 150px;
+        margin: 50px 0 0 118px;
     }
     #copyRightTag{
-        margin: 50px 0 30px 150px;
+        margin: 50px 0 30px 118px;
     }
     #contactImages{
         display: none;
@@ -1574,9 +1568,13 @@ p {
     #expTag{
         margin-left: 110px;
     }
+    /*project section*/
     #projectTag{
         margin-left: 500px;
         margin-top: -102px;
+    }
+    #projectSection-01{
+        margin-left: 30px;
     }
 
     /*contact section*/
