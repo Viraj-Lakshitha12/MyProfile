@@ -1017,7 +1017,7 @@ body {
 
 /*project section*/
 #projectSection{
-   margin-left: 200px;
+    margin-left: 200px;
 }
 .btn-tags {
     border-width: 1px;
@@ -1302,7 +1302,7 @@ p {
         margin-top: 50px;
     }
     #mainSectionAbout > p {
-       font-size: 20px;
+        font-size: 20px;
     }
     #mainSectionAbout > h1 {
         font-size: 20px;
@@ -1324,7 +1324,7 @@ p {
         font-size: 16px;
     }
     .wrapper{
-       margin-left: -90px;
+        margin-left: -90px;
     }
     /*skills section*/
     .entire-content{
@@ -1449,10 +1449,11 @@ p {
         width: 1000px;
     }
     #btnContact{
-        margin-top: -500px;
+        margin-top: -10px;
     }
     #btnHireMe{
-        /*margin-top: -50px;*/
+    margin-left: 50px;
+
     }
     #expTag{
         margin-left: 60px;
@@ -1527,14 +1528,15 @@ p {
     #about {
         margin-top: -120px;
     }
-   #btnHireMe{
-       margin-left: 150px;
-   }
-   #projectTag{
-       margin-left: 160px;
-       margin-top: 20px;
-   }
-   /*service section*/
+    #btnHireMe{
+        margin-left: 150px;
+    }
+    #projectTag{
+        margin-left: 160px;
+        margin-top: 20px;
+    }
+
+    /*service section*/
     .myServices{
         margin-left: 200px;
     }
@@ -1570,7 +1572,11 @@ p {
     }
     /*about section*/
     #expTag{
-        margin-left: 10px;
+        margin-left: 110px;
+    }
+    #projectTag{
+        margin-left: 500px;
+        margin-top: -102px;
     }
 
     /*contact section*/
@@ -1592,5 +1598,13 @@ p {
 @media (max-width: 1600px) and (min-width: 1200px) {
     #mapSection {
         display: none;
+    }
+    /*about section*/
+    #expTag{
+        margin-left: 115px;
+    }
+    #projectTag{
+        margin-left: 510px;
+        margin-top: -100px;
     }
 }
