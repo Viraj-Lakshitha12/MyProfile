@@ -1327,6 +1327,12 @@ p {
     .wrapper{
        margin-left: -90px;
     }
+    /*skills section*/
+    .entire-content{
+        width: 100px;
+        height: 100px;
+        margin-left: 280px;
+    }
 
     /*about section*/
     #aboutTagName{
@@ -1377,6 +1383,28 @@ p {
     #firstImageSection , #secondImageSection{
         width: 500px;
         margin-left:25px;
+    }
+    /*assignment section*/
+    #all-assignment{
+        margin-left: 80px;
+    }
+
+    /*contact section*/
+    #ContactFooter{
+        display: none;
+    }
+    #mapSection{
+        display: block;
+        margin: 50px 0 0 150px;
+    }
+    #copyRightTag{
+        margin: 50px 0 30px 150px;
+    }
+    #contactImages{
+        display: none;
+    }
+    #ToKnowDiv{
+        font-size:20px;
     }
 
 }
@@ -1442,6 +1470,22 @@ p {
         margin-left: 32vw;
     }
 
+    /*assignment section*/
+    #all-assignment{
+        margin-left: 170px;
+    }
+
+    /*contact section*/
+    #ContactFooter{
+        display: none;
+    }
+    #mapSection{
+        display: block;
+        margin: 50px 0 0 330px;
+    }
+    #copyRightTag{
+        margin: 50px 0 30px 330px;
+    }
 
 }
 
@@ -1483,13 +1527,47 @@ p {
     #projectSection{
         margin-left: -50px;
     }
+
+    /*contact section*/
+    #ContactFooter{
+        display: none;
+    }
+
+    #mapSection{
+        display: block;
+        margin: 50px 0 0 330px;
+    }
+    #copyRightTag{
+        margin: 50px 0 30px 330px;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 992px){
+    /*navigation section*/
     #navbarScroll{
         margin-left: -250px;
     }
+    /*about section*/
+    #expTag{
+        margin-left: 10px;
+    }
 
+    /*contact section*/
+    #ContactFooter{
+        display: none;
+    }
+
+    #mapSection{
+        display: block;
+        margin: 50px 0 0 400px;
+    }
+    #copyRightTag{
+        margin: 50px 0 30px 400px;
+    }
 }
 
-
+@media (max-width: 1600px) and (min-width: 1200px) {
+    #mapSection {
+        display: none;
+    }
+}
