@@ -888,9 +888,8 @@ body {
 
 /*project section add styles*/
 
-#projectSection{
-    display: flex;
-    margin-left: 85px;
+#projectSection-01{
+    margin-left:250px;
 }
 .phoneSystemImg:hover{
     width: 420px;
@@ -1334,11 +1333,6 @@ p {
         margin-left: 280px;
     }
 
-    /*about section*/
-    #aboutTagName{
-        margin-left: 170px;
-        font-size: 180%;
-    }
     #HelloTag{
         font-size: 130%;
         margin-left: 20px;
@@ -1379,6 +1373,12 @@ p {
         margin-left: 70px;
     }
 
+    /*project section*/
+    .text-center{
+        margin-left: -100px;
+    }
+
+
     /*image section*/
     #firstImageSection , #secondImageSection{
         width: 500px;
@@ -1387,6 +1387,17 @@ p {
     /*assignment section*/
     #all-assignment{
         margin-left: 80px;
+    }
+
+    /*about section*/
+    #aboutTagName{
+        margin-left: 170px;
+        font-size: 180%;
+    }
+    /*project section*/
+    #projectSection-01,#projectSection-02,#projectSection-03{
+        width: 400px;
+        margin-left: 10px;
     }
 
     /*contact section*/
@@ -1486,7 +1497,11 @@ p {
     #copyRightTag{
         margin: 50px 0 30px 330px;
     }
-
+    /*skills section*/
+    #projectSection-01,#projectSection-02,#projectSection-03{
+        width: 500px;
+        margin-left: -10px;
+    }
 }
 
 
@@ -1528,6 +1543,12 @@ p {
         margin-left: -50px;
     }
 
+    /*project section*/
+    #projectSection-01,#projectSection-02,#projectSection-03{
+        width: 750px;
+        margin-left: -10px;
+    }
+
     /*contact section*/
     #ContactFooter{
         display: none;
@@ -1564,6 +1585,8 @@ p {
     #copyRightTag{
         margin: 50px 0 30px 400px;
     }
+
+
 }
 
 @media (max-width: 1600px) and (min-width: 1200px) {
