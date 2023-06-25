@@ -1700,5 +1700,15 @@ p {
         margin-bottom: 10px;
     }
 }
+#d{
+    background-color: black;
+}
+.reduce-opacity {
+    opacity: 0.1;
+}
+#hamburger-div:hover{
+
+}
+
 
 
