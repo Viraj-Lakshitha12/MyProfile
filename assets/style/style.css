@@ -1,3 +1,10 @@
+header > #icon{
+    width: max-content;
+    height: max-content;
+}
+#icon{
+    background-color: black;
+}
 
 #nameLabel{
     font-size: 30px;
@@ -1283,11 +1290,16 @@ p {
 
 
 
-
-
 /*media query*/
 
 @media (max-width: 576px) {
+    #nav2{
+       width: 600px;
+        background-color: black;
+    }
+    .line{
+        margin-left: -580px;
+    }
     /*navigation bar*/
     #navigationBar{
         display: none;
@@ -1334,7 +1346,7 @@ p {
     }
 
     #HelloTag{
-        font-size: 130%;
+        font-size: 1px;
         margin-left: 20px;
     }
     #descriptionTag{
@@ -1413,8 +1425,19 @@ p {
     }
 
 }
-
+/*@media (max-width: 688px) and (min-width: 576px){*/
+/*    .line{*/
+/*        margin-left: -100px;*/
+/*    }*/
+/*}*/
 @media (max-width: 768px) and (min-width: 576px){
+    #nav2{
+        width: 800px;
+        background-color: black;
+    }
+    .line{
+        margin-left: -780px;
+    }
     #navigationBar{
         display: none;
     }
@@ -1487,10 +1510,13 @@ p {
     }
     #mapSection{
         display: block;
-        margin: 50px 0 0 330px;
+        margin: 50px 0 0 200px;
     }
     #copyRightTag{
-        margin: 50px 0 30px 330px;
+        margin: 50px 0 30px 200px;
+    }
+    #contactImages{
+        margin-left: 100px;
     }
     /*skills section*/
     #projectSection-01,#projectSection-02,#projectSection-03{
@@ -1500,7 +1526,11 @@ p {
 }
 
 
+
 @media (max-width: 992px) and (min-width: 768px){
+    #nav2{
+        display: none;
+    }
     .navbarScroll{
         margin-left: 120px;
     }
@@ -1560,6 +1590,9 @@ p {
 }
 
 @media (max-width: 1200px) and (min-width: 992px){
+    #nav2{
+        display: none;
+    }
     /*navigation section*/
     #navbarScroll{
         margin-left: -250px;
@@ -1594,9 +1627,13 @@ p {
 }
 
 @media (max-width: 1600px) and (min-width: 1200px) {
+    #nav2{
+        display: none;
+    }
     #mapSection {
         display: none;
     }
+
     /*about section*/
     #expTag{
         margin-left: 115px;
@@ -1605,4 +1642,63 @@ p {
         margin-left: 510px;
         margin-top: -100px;
     }
+
 }
+
+/*hamburger icon navigate section*/
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #f9f9f9;
+        padding: 20px;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 5;
+    }
+
+    .menu.active li {
+        margin-bottom: 10px;
+    }
+}
+
+

@@ -80,6 +80,43 @@
         </div>
     </nav>
     <div id="NavIcon"><i class="fa-solid fa-bars"></i></div>
+
+<!--    hambergar icon-->
+    <nav class="navbar1" id="nav2">
+        <div class="hamburger" id="h">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#mainSection" >Home</a>
+                </li>
+
+                <li class="nav-item" >
+                    <a class="nav-link" id="NavAbout2" href="#about" >About</a>                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link "  href="#service">Service</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link "  href="#gallery">Gallery</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link "  href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link "  href="#contact">Contact</a>
+                </li>
+        </ul>
+    </nav>
 </header>
 
 <!--    mainSection-->
@@ -662,19 +699,14 @@
 
     setInterval(nameAnimate,500);
 
-    // project section
 
-    // $("#projects").css('display','block');
-    // $("#assignment").css('display','none');
-    //
-    // $(".btnAssignment").click(function () {
-    //     $("#projects").css('display','none');
-    //     $("#assignment").css('display','block');
-    // });
-    // $(".btnProjects").click(function () {
-    //     $("#assignment").css('display','none');
-    //     $("#projects").css('display','block');
-    // });
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+
 
 </script>
 </body>
