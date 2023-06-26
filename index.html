@@ -284,7 +284,7 @@
 
                 <img class="col-md-4"  src="assets/images/my3.jpg" alt="Image" onclick="openModal(this)">
                 <img class="col-md-5" src="assets/images/my2.jpg" class="img-fluid rounded" onclick="openModal(this)" >
-                <img class="col-md-3"src="assets/images/my4.jpg" class="img-fluid rounded" onclick="openModal(this)">
+                <img class="col-md-3"src="assets/images/QXXL8640.JPG" class="img-fluid rounded" onclick="openModal(this)">
 
             </div>
             <div class="row" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="secondImageSection">
@@ -706,6 +706,9 @@
         hamburger.addEventListener('click', function() {
         menu.classList.toggle('active');
     });
+        $(".line").onmousemove(function () {
+            $("#mainImage").css('opacity','0.5');
+        })
 
         // $("#hamburger-div").click(function () {
         //     $('#mainImage').css('opacity','0.4')
