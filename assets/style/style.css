@@ -277,7 +277,12 @@ body {
     animation-iteration-count: 1;
 
 }
-
+#btnHireMe:hover{
+    background-color: #e8e8e8
+}
+#btnContact:hover{
+    background-color: #e8e8e8
+}
 
 #HelloTag{
     margin-left: 10px;
@@ -295,22 +300,6 @@ body {
     margin-left: 50px;
 }
 
-.btnAbout>div>input{
-    background-color: #0FFB51;
-    width: 150px;
-    height: 50px;
-    color: black;
-    border-radius: 50px;
-    font-weight: bolder;
-    font-size: 25px;
-    margin-top: 30px;
-}
-.btnAbout>div>input:last-child{
-    margin-left: 50px;
-}
-.btnAbout>div>input:first-child{
-    margin-left: 300px;
-}
 
 #expTag{
 
@@ -331,15 +320,113 @@ body {
 .projectAndExpBtn{
     margin-top: 50px;
 }
-#homeReadMoreBtn{
-    background-color: #857bff;
-    color: black;
-    width: 150px;
-    height: 60px;
-    border-radius: 20px;
-    font-weight: bolder;
-    font-size: 25px;
+
+
+
+/*about section buttons*/
+#btnContact{
+    margin-left: 50px;
 }
+.center {
+    text-align: center;
+    margin: 50px 0px 20px -170px;
+}
+.btn-v2 {
+    border-radius: 20px;
+    font: 300 0.935rem "Oswald", sans-serif;
+    display: inline-block;
+    min-width: 200px;
+    padding: 15px 5px;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    transform: perspective(1px) translateZ(0);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fdb145;
+    border: 2px solid #fdb145;
+    background-color: transparent;
+}
+
+.btn-v2:hover {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.btn-v2:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-v2::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: transform, -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: -webkit-transform;
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    background: #fdb145;
+    border-radius: 20px;
+}
+
+.btn-v2.green {
+    color: #4adfd1;
+    border: 2px solid #4adfd1;
+}
+
+.btn-v2.green::before {
+    background: #4adfd1;
+}
+
+.btn-v2.green:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-v2.green:focus {
+    text-decoration: none;
+}
+
+.btn-v2:hover::before,
+.btn-v2:focus::before,
+.btn-v2:active::before {
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    -moz-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transform: scaleY(1);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 #serviceTag{
@@ -1360,21 +1447,18 @@ p {
         font-size: 60%;
         margin-left: 80px;
     }
-    #btnHireMe{
-        margin-left: -150px;
-    }
-    .btnAbout > div:last-child{
-        margin-left: 150px;
-    }
-    .btnAbout{
-        margin-left: 100px;
+    .center{
+      margin-left: -25px;
     }
     #projectTag{
         margin-top: 35px;
         margin-left: 143px;
     }
     #expTag{
-        margin-left: 140px;
+        margin-left: 90px;
+    }
+    #projectTag{
+        margin-left: 90px;
     }
 
     /*service section*/
@@ -1400,6 +1484,8 @@ p {
         margin-left: 170px;
         font-size: 180%;
     }
+
+
     /*project section*/
     #projectSection-01,#projectSection-02,#projectSection-03{
         width: 400px;
@@ -1465,12 +1551,8 @@ p {
         font-size: 13px;
         width: 1000px;
     }
-    #btnContact{
-        margin-top: -10px;
-    }
-    #btnHireMe{
-    margin-left: 50px;
-
+    .center{
+        margin-left: -30px;
     }
     #expTag{
         margin-left: 60px;
@@ -1552,8 +1634,11 @@ p {
     #about {
         margin-top: -120px;
     }
-    #btnHireMe{
-        margin-left: 150px;
+    .center{
+        margin-left: -10px;
+    }
+    .projectAndExpBtn{
+        margin-left: 30px;
     }
     #projectTag{
         margin-left: 160px;
@@ -1562,7 +1647,7 @@ p {
 
     /*service section*/
     .myServices{
-        margin-left: 200px;
+        margin-left: 260px;
     }
     /*project section*/
     #projectSection{
@@ -1709,6 +1794,7 @@ p {
 #hamburger-div:hover{
 
 }
+
 
 
 
